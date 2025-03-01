@@ -1,0 +1,48 @@
+[
+    {
+        "tome": 9,
+        "name": "Larmes",
+        "firstscan": 72,
+        "lastscan": 81
+    },{
+        "tome": 8,
+        "name": "Je ne mourrai pas",
+        "firstscan": 63,
+        "lastscan": 71
+    },{
+        "tome": 7,
+        "name": "Vieux machin",
+        "firstscan": 54,
+        "lastscan": 62
+    },{
+        "tome": 6,
+        "name": "Le serment",
+        "firstscan": 45,
+        "lastscan": 53
+    },{
+        "tome": 5,
+        "name": "Pour qui sonne le glas",
+        "firstscan": 36,
+        "lastscan": 44
+    },{
+        "tome": 4,
+        "name": "Attaque au clair de lune",
+        "firstscan": 27,
+        "lastscan": 35
+    },{
+        "tome": 3,
+        "name": "Une vérité qui blesse",
+        "firstscan": 18,
+        "lastscan": 26
+    },{
+        "tome": 2,
+        "name": "Luffy versus la bande à Baggy !!",
+        "firstscan": 9,
+        "lastscan": 17
+    },{
+        "tome": 1,
+        "name": "Romance Dawn - À l'aube d'une grande aventure",
+        "firstscan": 1,
+        "lastscan": 8
+    }
+]
