@@ -1,0 +1,58 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Piedra', cursive;
+    margin-top: 35px;
+
+}
+
+.home-page h2 {
+    font-size: 26px;
+    text-shadow: 0 0 2px #fff;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 400;
+}
+
+.home-page h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    animation: expand-bar 2s forwards;
+}
+
+@keyframes expand-bar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    border: 2px solid white;
+    width: 60%;
+}
+.home-page-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid white;
+}
+

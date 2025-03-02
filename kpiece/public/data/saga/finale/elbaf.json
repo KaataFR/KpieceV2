@@ -1,0 +1,155 @@
+[
+    {
+        "scan": 1125,
+        "name": "Qu'est-ce que la mort ?",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 18,
+        "date": "6 Septembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1126,
+        "name": "Prendre ses responsabilités",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 17,
+        "date": "13 Septembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1127,
+        "name": "Aventure au pays des mystères",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 15,
+        "date": "20 Septembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1128,
+        "name": "RPG",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 18,
+        "date": "4 Octobre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1129,
+        "name": "Pantins de chair",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 17,
+        "date": "11 Octobre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1130,
+        "name": "Le prince maudit",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 15,
+        "date": "18 Octobre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1131,
+        "name": "Loki du monde souterrain",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 16,
+        "date": "8 Novembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1132,
+        "name": "Aventure à Elbaf",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 17,
+        "date": "29 Novembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1133,
+        "name": "Félicite-moi",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 17,
+        "date": "6 Décembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1134,
+        "name": "La bibliothèque du Hibou",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 18,
+        "date": "20 Décembre 2024",
+        "saga": "finale"
+    },
+    {
+        "scan": 1135,
+        "name": "Le toast de l'amitié",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 14,
+        "date": "1 Janvier 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1136,
+        "name": "Le pays qui attend le soleil",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 19,
+        "date": "17 Janvier 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1137,
+        "name": "Shamrock apparaît",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 17,
+        "date": "24 Janvier 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1138,
+        "name": "Le Haley",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 17,
+        "date": "31 Janvier 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1139,
+        "name": "Mange-Montagne",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 14,
+        "date": "7 Février 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1140,
+        "name": "Scopper Gaban",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 17,
+        "date": "21 Février 2025",
+        "saga": "finale"
+    },
+    {
+        "scan": 1141,
+        "name": "Une femme plus agée",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 16,
+        "date": "7 Février 2025",
+        "saga": "finale"
+    }
+]
