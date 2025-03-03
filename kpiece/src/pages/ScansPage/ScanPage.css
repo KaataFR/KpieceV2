@@ -1,0 +1,45 @@
+.scan-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Piedra', cursive;
+    height: 100%;
+}
+
+.scan-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.scan-page p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.scan-page img {
+    max-width: 1440px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.scan-page .navigation-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.scan-page .navigation-block.left {
+    left: 0;
+}
+
+.scan-page .navigation-block.right {
+    right: 0;
+}

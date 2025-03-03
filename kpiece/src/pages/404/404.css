@@ -1,0 +1,57 @@
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "pirata one", cursive;
+}
+
+.not-found-page h2 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding-bottom: 20%;
+    font-weight: lighter;
+    animation: appearAnimation 4s ease-out forwards;
+}
+
+@keyframes appearAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.not-found-page img {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: -200px;
+    left: 35%;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 50px;
+}
+
+.not-found-page img {
+    animation: imgAnimation 3s ease-out ;
+}
+
+@keyframes imgAnimation {
+    0% {
+        transform: scale(1);
+
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+}

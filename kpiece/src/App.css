@@ -4,7 +4,8 @@ html {
   box-sizing: content-box;
 }
 
-ul,li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,10 +13,9 @@ ul,li {
 
 body {
   margin: 0;
-  height: 1080px;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,0.99) 64%, rgba(19,2,2,1) 91%, rgba(47,6,6,1) 100%);
-
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.99) 64%, rgba(19, 2, 2, 1) 91%, rgba(47, 6, 6, 1) 100%);
+  height: 100vh;
 }
 
 
@@ -43,12 +43,12 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
-header nav, header nav ul {
+header nav,
+header nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
