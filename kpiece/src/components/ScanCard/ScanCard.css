@@ -4,13 +4,29 @@
     border-radius: 10px;
     overflow: hidden;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     cursor: pointer;
     transition: transform 0.2s ease;
+}
+
+@keyframes gentle-3d-float {
+    0%, 100% {
+        transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+        transform: perspective(200px) rotateX(0deg) rotateY(-1deg);
+    }
+    75% {
+        transform: perspective(200px) rotateX(0deg) rotateY(1deg);
+    }
+}
+
+.scan-card {
+    transform-style: preserve-3d;
+    animation: gentle-3d-float 8s ease-in-out infinite;
 }
 
 .scan-card:hover {
@@ -24,7 +40,7 @@
     border-radius: 10px 0 10px 0;
     border: 1px solid white;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 19px;
     position: relative;
     z-index: 2;
     margin-bottom: 10px;
@@ -54,10 +70,11 @@
 
 .scan-card-content h4 {
     margin: 0 0 5px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     position: relative;
     font-family: "Suez One", serif;
+    word-spacing: 2px;
 }
 
 .scan-card-content h4::after {
@@ -72,8 +89,8 @@
 
 .scan-card-content p {
     margin: 0;
-    font-size: 12px;
-    color: #aaa;
+    font-size: 13px;
+    color: #ddd5d5;
 }
 
 .new-badge {
@@ -82,17 +99,17 @@
     right: 10px;
     background: linear-gradient(45deg, red, rgb(235, 80, 8), rgb(255, 174, 0));
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 200;
     padding: 5px 10px;
     border-radius: 10px;
     text-transform: uppercase;
     font-family: "Poetsen One", sans-serif;
-    animation: bounce 2s infinite;
-    text-shadow: 1 1px 2px #000000;
+    animation: newbounce 2s infinite;
+    text-shadow: 1px 2px 2px #000000;
 }
 
-@keyframes bounce {
+@keyframes newbounce {
 
     0%,
     20%,

@@ -17,7 +17,7 @@ https://{nomdedomaine}/arcs
 https://{nomdedomaine}/arcs/{selectedarc}/{page}
 
 // Page Scan
-https://{nomdedomaine}/{scan}/{selectedpage}
+https://{nomdedomaine}/scan/{saga}/{arc}/{selectedscan}/{selectedpage}
 
 // Page 404
 https://{nomdedomaine}/{404}

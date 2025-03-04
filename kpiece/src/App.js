@@ -4,6 +4,7 @@ import Routes from './Routes/routes';
 import Home from './pages/Accueil/Home';
 import Loading from './components/Loading/Loading';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <Routes>
         <Home />
       </Routes>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import ScanCard from '../../components/ScanCard/ScanCard';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [latestScans, setLatestScans] = useState([]);
@@ -8,12 +9,11 @@ const Home = () => {
     const [error, setError] = useState(null);
     const [sagaName, setSagaName] = useState('');
     const [arcName, setArcName] = useState('');
+    const navigate = useNavigate();
 
-    // URL de base de votre bucket S3 (version HTTP publique)
     const baseUrl = 'https://kpiece2.s3.eu-west-3.amazonaws.com/';
 
     useEffect(() => {
-        // Charger saga.json
         fetch(`${baseUrl}data/saga.json`)
             .then(response => {
                 if (!response.ok) {
@@ -37,7 +37,6 @@ const Home = () => {
                 const latestArc = firstSaga.arcssearch[0];
                 setArcName(latestArc);
 
-                // Charger le fichier d'arc avec le chemin corrigé
                 return fetch(`${baseUrl}data/saga/${currentSagaName}/${latestArc}.json`)
                     .then(response => {
                         if (!response.ok) {
@@ -63,6 +62,10 @@ const Home = () => {
     if (loading) return <div className="loading">Chargement...</div>;
     if (error) return <div className="error">Erreur: {error}</div>;
 
+    const handlePlusClick = () => {
+        navigate(`/arcs/${arcName}`);
+    };
+
     return (
         <div className="home-page">
             <h2>Derniers chapitres</h2>
@@ -83,7 +86,11 @@ const Home = () => {
                 ) : (
                     <p>Aucun chapitre disponible</p>
                 )}
+                
             </div>
+            <div className="plus-button-container">
+                    <button className="plus-button" onClick={handlePlusClick}>+</button>
+                </div>
         </div>
     );
 };

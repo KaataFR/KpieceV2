@@ -18,10 +18,10 @@ const AppRoutes = () => {
                 <Layout>
                     <RouterRoutes>
                         <Route exact path="/" element={<Home />} />
-                        <Route exact path="/tomes" element={<TomeHome />} />
-                        <Route exact path="/tomes/:selectedtome" element={<Tome />} />
+                        <Route exact path="/tomes/:tomelist" element={<TomeHome />} />
+                        <Route exact path="/tomes/:tomelist/:selectedtome" element={<Tome />} />
                         <Route exact path="/arcs" element={<ArcsHome />} />
-                        <Route exact path="/arcs/:selectedarc/:page" element={<Arc />} />
+                        <Route exact path="/arcs/:selectedarc" element={<Arc />} />
                         <Route exact path="/search/:searchtext" element={<Search />} />
                         <Route exact path="/scan/:scansaga/:scanarc/:selectedscan/:selectedpagescan" element={<ScanPage />} />
                         <Route path="*" element={<NotFoundPage />} />

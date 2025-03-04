@@ -1,0 +1,202 @@
+.tome-h2 {
+    font-family: 'Piedra', cursive;
+    font-size: 28px;
+    text-align: center;
+    margin: 50px auto;
+    width: 250px;
+    color: white;
+    position: relative;
+    font-weight: lighter;
+}
+
+.tome-h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    animation: expand-bar 2s forwards;
+}
+
+
+
+
+
+/* TomeHome.css - Responsive grid layout for tome cards */
+
+.tome-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.tome-home>* {
+    flex: 0 0 250px;
+    margin: 0;
+}
+
+
+
+/* Add a subtle animation for loading state */
+@keyframes fadeInTome {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
+.tome-home {
+    animation: fadeInTome 3s ease-in;
+}
+
+/* Tome range selector styling */
+.tome-selector {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50px;
+    top: 55%;
+    transform: translateY(-50%);
+    gap: 10px;
+    z-index: 100;
+}
+
+.tome-selector a {
+    font-family: 'Piedra', cursive;
+    color: #f0f0f0a2;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.tome-selector a:hover {
+    color: #ac2222;
+}
+
+.tome-selector a.active {
+    color: #ffffff;
+    transform: scale(1.4);
+
+}
+
+
+
+.tome-selector:hover a.active {
+
+    border: none;
+}
+
+
+
+
+/* test */
+
+/* Ajouter au style existant du sélecteur de tome */
+.tome-selector a.active {
+    color: #ac2222;
+    transform: scale(1.4);
+    position: relative;
+    /* Pour positionner la barre */
+}
+
+/* Barre latérale pour l'élément actif */
+.tome-selector a.active::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -15px;
+    height: 23px;
+    width: 4px;
+    background-color: #ffffff;
+    border-radius: 1.5px;
+    animation: expandHeight 0.3s ease-out forwards;
+}
+
+.tome-selector a.active::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -15px;
+    height: 23px;
+    width: 4px;
+    background-color: #ffffff;
+    border-radius: 1.5px;
+    animation: expandHeight 0.3s ease-out forwards;
+}
+
+/* Animation pour la barre latérale */
+
+
+/* Ajuster le comportement au survol */
+.tome-selector:hover a.active::before {
+    opacity: 1;
+}
+
+.tome-selector:hover a.active:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* bouton croissant decroissant */
+
+
+
+.sort-button {
+    position: relative;
+    width: 45px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+
+
+.sort-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate 180° animation when clicked.
+   Toggle the "clicked" class via JavaScript to activate the animation. */
+.rotated {
+    transform: rotate(180deg);
+}
+
+.sort-button .fa-solid {
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}

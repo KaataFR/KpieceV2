@@ -1,0 +1,233 @@
+[
+  {
+    "firstscan": 1,
+    "lastscan": 7,
+    "arc": "romancedawn",
+    "arcname": "Romance Dawn",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 8,
+    "lastscan": 21,
+    "arc": "orangetown",
+    "arcname": "Orange Town",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 22,
+    "lastscan": 41,
+    "arc": "sirop",
+    "arcname": "Sirop Village",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 42,
+    "lastscan": 68,
+    "arc": "baratie",
+    "arcname": "Baratie",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 69,
+    "lastscan": 95,
+    "arc": "arlongpark",
+    "arcname": "Arlong Park",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 96,
+    "lastscan": 100,
+    "arc": "loguetown",
+    "arcname": "Loguetown",
+    "saga": "eastblue"
+  },
+  {
+    "firstscan": 101,
+    "lastscan": 105,
+    "arc": "reversemoutain",
+    "arcname": "Reverse Mountain",
+    "saga": "alabasta"
+  },
+  {
+    "firstscan": 106,
+    "lastscan": 114,
+    "arc": "whiskypeak",
+    "arcname": "Whisky Peak",
+    "saga": "alabasta"
+  },
+  {
+    "firstscan": 115,
+    "lastscan": 129,
+    "arc": "littlegarden",
+    "arcname": "Little Garden",
+    "saga": "alabasta"
+  },
+  {
+    "firstscan": 130,
+    "lastscan": 154,
+    "arc": "drum",
+    "arcname": "Drum Island",
+    "saga": "alabasta"
+  },
+  {
+    "firstscan": 155,
+    "lastscan": 217,
+    "arc": "alabasta",
+    "arcname": "Alabasta",
+    "saga": "alabasta"
+  },
+  {
+    "firstscan": 218,
+    "lastscan": 236,
+    "arc": "jaya",
+    "arcname": "Jaya",
+    "saga": "skypiea"
+  },
+  {
+    "firstscan": 237,
+    "lastscan": 302,
+    "arc": "skypiea",
+    "arcname": "Skypiea",
+    "saga": "skypiea"
+  },
+  {
+    "firstscan": 303,
+    "lastscan": 321,
+    "arc": "longringlongland",
+    "arcname": "Long Ring Long Land",
+    "saga": "waterseven"
+  },
+  {
+    "firstscan": 322,
+    "lastscan": 374,
+    "arc": "waterseven",
+    "arcname": "Water Seven",
+    "saga": "waterseven"
+  },
+  {
+    "firstscan": 375,
+    "lastscan": 430,
+    "arc": "enieslobby",
+    "arcname": "Enies Lobby",
+    "saga": "waterseven"
+  },
+  {
+    "firstscan": 431,
+    "lastscan": 441,
+    "arc": "postenieslobby",
+    "arcname": "Post-Enies Lobby",
+    "saga": "waterseven"
+  },
+  {
+    "firstscan": 442,
+    "lastscan": 489,
+    "arc": "thrillerbark",
+    "arcname": "Thriller Bark",
+    "saga": "thrillerbark"
+  },
+  {
+    "firstscan": 490,
+    "lastscan": 513,
+    "arc": "sabaody",
+    "arcname": "Sabaody",
+    "saga": "guerreausommet"
+  },
+  {
+    "firstscan": 514,
+    "lastscan": 524,
+    "arc": "amazonlily",
+    "arcname": "Amazon Lily",
+    "saga": "guerreausommet"
+  },
+  {
+    "firstscan": 525,
+    "lastscan": 549,
+    "arc": "impeldown",
+    "arcname": "Impel Down",
+    "saga": "guerreausommet"
+  },
+  {
+    "firstscan": 550,
+    "lastscan": 580,
+    "arc": "marineford",
+    "arcname": "Marineford",
+    "saga": "guerreausommet"
+  },
+  {
+    "firstscan": 581,
+    "lastscan": 597,
+    "arc": "postguerre",
+    "arcname": "Post-Marineford",
+    "saga": "guerreausommet"
+  },
+  {
+    "firstscan": 598,
+    "lastscan": 602,
+    "arc": "retourasabaody",
+    "arcname": "Retour à Sabaody",
+    "saga": "hommespoissons"
+  },
+  {
+    "firstscan": 603,
+    "lastscan": 653,
+    "arc": "hommespoissons",
+    "arcname": "L'île des Hommes-Poissons",
+    "saga": "hommespoissons"
+  },
+  {
+    "firstscan": 654,
+    "lastscan": 699,
+    "arc": "punkhazard",
+    "arcname": "Punk Hazard",
+    "saga": "dressrosa"
+  },
+  {
+    "firstscan": 700,
+    "lastscan": 801,
+    "arc": "dressrosa",
+    "arcname": "Dressrosa",
+    "saga": "dressrosa"
+  },
+  {
+    "firstscan": 802,
+    "lastscan": 824,
+    "arc": "zou",
+    "arcname": "Zou",
+    "saga": "wholecakeisland"
+  },
+  {
+    "firstscan": 825,
+    "lastscan": 902,
+    "arc": "wholecakeisland",
+    "arcname": "Whole Cake Island",
+    "saga": "wholecakeisland"
+  },
+  {
+    "firstscan": 903,
+    "lastscan": 908,
+    "arc": "reverie",
+    "arcname": "Reverie",
+    "saga": "wholecakeisland"
+  },
+  {
+    "firstscan": 909,
+    "lastscan": 1057,
+    "arc": "wanokuni",
+    "arcname": "Wano Kuni",
+    "saga": "paysdeswa"
+  },
+  {
+    "firstscan": 1058,
+    "lastscan": 1125,
+    "arc": "egghead",
+    "arcname": "Egg Head",
+    "saga": "finale"
+  },
+  {
+    "firstscan": 1126,
+    "lastscan": 1200,
+    "arc": "elbaf",
+    "arcname": "Elbaf",
+    "saga": "finale"
+  }
+]
