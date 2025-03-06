@@ -6,12 +6,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 250px;
     cursor: pointer;
-    animation: gentle-3d-float 8s ease-in-out infinite;
+    animation: gentle-3d-float 20s ease-in-out 20s;
+    overflow: visible; /* Ensure overflow is visible */
 
 }
 
 .tome-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 .tome-card h3 {
@@ -44,4 +45,22 @@
     margin: 8px 0;
     text-align: center;
     font-weight: lighter;
+}
+
+@keyframes gentle-3d-float {
+    0% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    25% {
+        transform: translateY(-5px) rotateX(2deg) rotateY(3deg) scale(1.02);
+    }
+    50% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    75% {
+        transform: translateY(5px) rotateX(-2deg) rotateY(-3deg) scale(0.98);
+    }
+    100% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
+    }
 }

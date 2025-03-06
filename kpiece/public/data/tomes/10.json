@@ -3,51 +3,71 @@
         "tome": 19,
         "name": "Rébellion",
         "firstscan": 167,
-        "lastscan": 176
+        "lastscan": 176,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 18,
         "name": "Ace entre en scène",
         "firstscan": 156,
-        "lastscan": 166
+        "lastscan": 166,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 17,
         "name": "Les cerisier d'Hiluluk",
         "firstscan": 146,
-        "lastscan": 155
+        "lastscan": 155,
+        "arc": ["drum","alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 16,
         "name": "Successeurs",
         "firstscan": 137,
-        "lastscan": 145
+        "lastscan": 145,
+        "arc": ["drum"],
+        "saga": ["alabasta"]
     },{
         "tome": 15,
         "name": "Droit devant !!",
         "firstscan": 127,
-        "lastscan": 136
+        "lastscan": 136,
+        "arc": ["littlegarden","drum"],
+        "saga": ["alabasta"]
     },{
         "tome": 14,
         "name": "Instinct",
         "firstscan": 118,
-        "lastscan": 126
+        "lastscan": 126,
+        "arc": ["littlegarden"],
+        "saga": ["alabasta"]
     },{
         "tome": 13,
         "name": "Tiens bons !!",
         "firstscan": 109,
-        "lastscan": 117
+        "lastscan": 117,
+        "arc": ["whiskeypeak","littlegarden"],
+        "saga": ["alabasta"]
     },{
         "tome": 12,
         "name": "Et ainsi débuta la légende",
         "firstscan": 100,
-        "lastscan": 108
+        "lastscan": 108,
+        "arc": ["loguetown","reversemoutain","whiskeypeak"],
+        "saga": ["eastblue","alabasta"]
     },{
         "tome": 11,
         "name": "Le plus grand bandit d'East Blue",
         "firstscan": 91,
-        "lastscan": 99
+        "lastscan": 99,
+        "arc": ["arlongpark","loguetown"],
+        "saga": ["eastblue"]
     },{
         "tome": 10,
         "name": "OK, Let's Stand Up !",
         "firstscan": 82,
-        "lastscan": 90
+        "lastscan": 90,
+        "arc": ["arlongpark"],
+        "saga": ["eastblue"]
     }
 ]

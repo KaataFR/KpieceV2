@@ -2,7 +2,6 @@
     position: relative;
     width: 200px;
     border-radius: 10px;
-    overflow: hidden;
     color: white;
     display: flex;
     flex-direction: column;
@@ -26,7 +25,7 @@
 
 .scan-card {
     transform-style: preserve-3d;
-    animation: gentle-3d-float 8s ease-in-out infinite;
+    animation: gentle-3d-float 8s ease-in-out 30s;
 }
 
 .scan-card:hover {
@@ -96,7 +95,7 @@
 .new-badge {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: -20px;
     background: linear-gradient(45deg, red, rgb(235, 80, 8), rgb(255, 174, 0));
     color: white;
     font-size: 14px;

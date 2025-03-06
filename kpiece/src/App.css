@@ -8,7 +8,10 @@ html {
   height: fit-content;
   scroll-behavior: smooth;
 }
-
+html {
+  /* other properties */
+  scroll-behavior: smooth;
+}
 ul,
 li {
   list-style-type: none;

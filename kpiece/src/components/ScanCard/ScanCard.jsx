@@ -16,7 +16,7 @@ const ScanCard = ({ scanNumber, scanName, scanImage, scanDate, isNew, scanSaga, 
             <div className="scan-card-content">
                 <h4>{scanName}</h4>
                 <p>{scanDate}</p>
-                {isNew && <span className="new-badge">New</span>}
+                {isNew && <span className="new-badge">Nouveau</span>}
             </div>
         </div>
     );

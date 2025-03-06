@@ -1,0 +1,150 @@
+.arc-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInArc 0.5s forwards;
+}
+
+@keyframes fadeInArc {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.arc-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: "piedra", serif;
+    font-weight: 100;
+    background: linear-gradient(to right, rgb(228, 8, 8), rgb(238, 18, 18));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 5px rgba(2, 0, 0, 0.562);
+    word-spacing: 2px;
+    text-align: start;
+    width: 300px;
+}
+
+.arc-card button {
+    background: linear-gradient(to right, rgb(228, 8, 8), rgb(238, 18, 18));
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.arc-card button:hover {
+    background-color: linear-gradient(to right, rgb(228, 8, 8), rgb(238, 18, 18));
+}
+
+.arc-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    animation: spawnarc 1s forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes spawnarc {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+
+    }
+}
+
+.arc-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 100%;
+    height: 55px;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.arc-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    max-width: 235px;
+    height: 55px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    opacity: 4;
+    transition: all 0.3s ease;
+}
+
+.arc-item:hover {
+    transform: scale(1.1);
+}
+
+.arc-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arc-item p {
+    margin: 0;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    font-family: 'piedra', serif;
+    font-weight: lighter;
+}
+
+.arc-card i {
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

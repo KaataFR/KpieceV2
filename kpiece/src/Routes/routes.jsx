@@ -19,7 +19,7 @@ const AppRoutes = () => {
                     <RouterRoutes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/tomes/:tomelist" element={<TomeHome />} />
-                        <Route exact path="/tomes/:tomelist/:selectedtome" element={<Tome />} />
+                        <Route exact path="/tomes/:tomelist/:tomenumber" element={<Tome />} />
                         <Route exact path="/arcs" element={<ArcsHome />} />
                         <Route exact path="/arcs/:selectedarc" element={<Arc />} />
                         <Route exact path="/search/:searchtext" element={<Search />} />

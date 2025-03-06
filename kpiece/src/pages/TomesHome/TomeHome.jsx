@@ -68,7 +68,7 @@ const TomeHome = () => {
                         key={tome.tome}
                         tomeNumber={tome.tome}
                         imgTome={`https://kpiece2.s3.eu-west-3.amazonaws.com/img/tomes/${tomelist}/${tome.tome}.webp`}
-                        fallbackImages={getImageWithFallback(`https://kpiece2.s3.eu-west-3.amazonaws.com/img/tomes/${tomelist}`, tome.tome)}
+                        fallbackImages={getImageWithFallback(`https://kpiece2.s3.eu-west-3.amazonaws.com/img/tomes/${tomelist}/Image`, tome.tome)}
                         tomeName={tome.name}
                     />
                 ))}

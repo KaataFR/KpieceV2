@@ -3,51 +3,71 @@
         "tome": 29,
         "name": "Oratorio",
         "firstscan": 265,
-        "lastscan": 275
+        "lastscan": 275,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     },{
         "tome": 28,
         "name": "Wiper le démon furieux",
         "firstscan": 256,
-        "lastscan": 264
+        "lastscan": 264,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     },{
         "tome": 27,
         "name": "Prélude",
         "firstscan": 247,
-        "lastscan": 255
+        "lastscan": 255,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     },{
         "tome": 26,
         "name": "Aventure sur l'ile de Dieu",
         "firstscan": 237,
-        "lastscan": 246
+        "lastscan": 246,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     },{
         "tome": 25,
         "name": "L'homme qui valait 100 millions",
         "firstscan": 227,
-        "lastscan": 236
+        "lastscan": 236,
+        "arc": ["jaya"],
+        "saga": ["skypiea"]
     },{
         "tome": 24,
         "name": "Croire en ses rêves",
         "firstscan": 217,
-        "lastscan": 226
+        "lastscan": 226,
+        "arc": ["alabasta","jaya"],
+        "saga": ["alabasta","skypiea"]
     },{
         "tome": 23,
         "name": "L'aventure de Vivi",
         "firstscan": 206,
-        "lastscan": 216
+        "lastscan": 216,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 22,
         "name": "Hope !",
         "firstscan": 196,
-        "lastscan": 205
+        "lastscan": 205,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 21,
         "name": "Utopia",
         "firstscan": 187,
-        "lastscan": 195
+        "lastscan": 195,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     },{
         "tome": 20,
         "name": "Bataille décisive à Alubarna",
         "firstscan": 177,
-        "lastscan": 186
+        "lastscan": 186,
+        "arc": ["alabasta"],
+        "saga": ["alabasta"]
     }
 ]

@@ -3,51 +3,71 @@
         "tome": 39,
         "name": "Opération sauvetage",
         "firstscan": 368,
-        "lastscan": 377
+        "lastscan": 377,
+        "arc": ["waterseven","enieslobby"],
+        "saga": ["waterseven"]
     },{
         "tome": 38,
         "name": "Rocketman !",
         "firstscan": 358,
-        "lastscan": 367
+        "lastscan": 367,
+        "arc": ["waterseven"],
+        "saga": ["waterseven"]
     },{
         "tome": 37,
         "name": "Monsieur Tom",
         "firstscan": 347,
-        "lastscan": 357
+        "lastscan": 357,
+        "arc": ["waterseven"],
+        "saga": ["waterseven"]
     },{
         "tome": 36,
         "name": "Justice n°9",
         "firstscan": 337,
-        "lastscan": 346
+        "lastscan": 346,
+        "arc": ["waterseven"],
+        "saga": ["waterseven"]
     },{
         "tome": 35,
         "name": "Capitaine",
         "firstscan": 328,
-        "lastscan": 336
+        "lastscan": 336,
+        "arc": ["waterseven"],
+        "saga": ["waterseven"]
     },{
         "tome": 34,
         "name": "Water Seven, la cité sur l'eau",
         "firstscan": 317,
-        "lastscan": 327
+        "lastscan": 327,
+        "arc": ["longringlongland","waterseven"],
+        "saga": ["waterseven"]
     },{
         "tome": 33,
         "name": "Davy back fight !!",
         "firstscan": 306,
-        "lastscan": 316
+        "lastscan": 316,
+        "arc": ["longringlongland"],
+        "saga": ["waterseven"]
     },{
         "tome": 32,
         "name": "Love song",
         "firstscan": 296,
-        "lastscan": 305
+        "lastscan": 305,
+        "arc": ["skypiea","longringlongland"],
+        "saga": ["skypiea","waterseven"]
     },{
         "tome": 31,
         "name": "Nous sommes là",
         "firstscan": 286,
-        "lastscan": 295
+        "lastscan": 295,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     },{
         "tome": 30,
         "name": "Capriccio",
         "firstscan": 276,
-        "lastscan": 285
+        "lastscan": 285,
+        "arc": ["skypiea"],
+        "saga": ["skypiea"]
     }
 ]

@@ -1,0 +1,334 @@
+.Selected-Component {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Selected-Component-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 50px 0px;
+    position: relative;
+}
+
+.back-button {
+    width: 150px;
+    height: 60px;
+    transition: all 0.3s ease;
+}
+
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.back-button i {
+    font-size: 26px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.Selected-Component-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+}
+
+.Selected-Component-card {
+    position: relative;
+    /* Added to support absolute positioning of h2 */
+}
+
+.Selected-Component-image {
+    width: 500px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+    /* Centered in the card by the parent's flex properties */
+}
+
+.Selected-Component-h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Piedra', cursive;
+    font-size: 32px;
+    margin: 0;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    /* Ensures text appears above the image */
+    text-align: center;
+    width: fit-content;
+}
+
+.Selected-Component-Counter {
+    border: 2px solid red;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-family: 'piedra', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.sort-button {
+    position: relative;
+    width: 45px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    border: 3px solid white;
+    border-radius: 100px;
+}
+
+
+.sort-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate 180° animation when clicked.
+   Toggle the "clicked" class via JavaScript to activate the animation. */
+.rotated {
+    transform: rotate(180deg);
+}
+
+.sort-button .fa-solid {
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.Selected-Component-List-Scan {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.Selected-Component-Scan {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Selected-Component-Scan:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.Selected-Component-Scan h3 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    width: 150px;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.Selected-Component-Scan p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'poetsen one';
+    text-align: start;
+    padding-left: 20px;
+
+}
+
+.Selected-Component-Scan-Name {
+    width: 500px;
+}
+
+
+.Selected-Component-Scan-Arc {
+    width: 200px;
+    background-image: linear-gradient(45deg, #e41f1f, #800000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Selected-Component-Scan-Date {
+    width: 220px;
+}
+
+
+
+
+
+.read-scan-button {
+    background: linear-gradient(45deg, #e41f1f, #800000);
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.read-scan-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(228, 31, 31, 0.5);
+}
+
+.Selected-Component-pages {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.Selected-Component-pages button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Selected-Component-pages button:hover {
+    background-color: rgba(228, 31, 31, 0.5);
+}
+
+.Selected-Component-pages button.active-page {
+    background: linear-gradient(45deg, #e41f1f, #800000);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Pagination Container */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.pagination-container button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-container button:hover {
+    background-color: rgba(228, 31, 31, 0.7);
+    transform: translateY(-2px);
+}
+
+.pagination-container button.active-page {
+    background: linear-gradient(45deg, #e41f1f, #800000);
+    box-shadow: 0 0 10px rgba(228, 31, 31, 0.7);
+}
+
+
+.Selected-Component-Scan {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: cardAppear 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* Each card appears with a slight delay based on its position */
+.Selected-Component-Scan:nth-child(1) { animation-delay: 0.1s; }
+.Selected-Component-Scan:nth-child(2) { animation-delay: 0.2s; }
+.Selected-Component-Scan:nth-child(3) { animation-delay: 0.3s; }
+.Selected-Component-Scan:nth-child(4) { animation-delay: 0.4s; }
+.Selected-Component-Scan:nth-child(5) { animation-delay: 0.5s; }
+.Selected-Component-Scan:nth-child(6) { animation-delay: 0.6s; }
+.Selected-Component-Scan:nth-child(7) { animation-delay: 0.7s; }
+.Selected-Component-Scan:nth-child(8) { animation-delay: 0.8s; }
+.Selected-Component-Scan:nth-child(9) { animation-delay: 0.9s; }
+.Selected-Component-Scan:nth-child(10) { animation-delay: 1s; }
+/* Add more if needed */
+
+@keyframes cardAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
