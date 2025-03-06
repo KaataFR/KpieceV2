@@ -23,7 +23,7 @@ const Header = () => {
                 <ul>
                     <li><a href="/">Dernières sorties</a></li>
                     <li><a href="/tomes/0">Tomes</a></li>
-                    <li><a href="/arcs">Arcs</a></li>
+                    <li><a href="/saga">Saga</a></li>
                 </ul>
             </nav>
             <div className="header-search">

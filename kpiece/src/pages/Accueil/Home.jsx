@@ -63,7 +63,7 @@ const Home = () => {
     if (error) return <div className="error">Erreur: {error}</div>;
 
     const handlePlusClick = () => {
-        navigate(`/arcs/${arcName}`);
+        navigate(`/saga/${sagaName}/${arcName}`);
     };
 
     return (

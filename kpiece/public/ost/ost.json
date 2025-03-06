@@ -1,0 +1,21 @@
+[
+    {
+        "name": "sad",
+        "ostnumber": 5
+    },{
+        "name": "happy",
+        "ostnumber": 4
+    },{
+        "name": "chill",
+        "ostnumber": 6
+    },{
+        "name": "mysterious",
+        "ostnumber": 7
+    },{
+        "name": "fight",
+        "ostnumber": 12
+    },{
+        "name": "epic",
+        "ostnumber": 6
+    }
+]

@@ -78,7 +78,7 @@
     margin: 0;
     font-weight: normal;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px black;
     z-index: 1;
     /* Ensures text appears above the image */
     text-align: center;

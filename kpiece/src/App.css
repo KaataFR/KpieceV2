@@ -8,9 +8,25 @@ html {
   height: fit-content;
   scroll-behavior: smooth;
 }
-html {
-  /* other properties */
-  scroll-behavior: smooth;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: red rgba(0, 0, 0, 0.1);
 }
 ul,
 li {

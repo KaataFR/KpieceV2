@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes as RouterRoutes } from 'react-router-dom';
 const Home = lazy(() => import('../pages/Accueil/Home'));
 const TomeHome = lazy(() => import('../pages/TomesHome/TomeHome'));
 const Tome = lazy(() => import('../pages/Tome/Tome'));
-const ArcsHome = lazy(() => import('../pages/ArcsHome/ArcsHome'));
+const Saga = lazy(() => import('../pages/Saga/Saga'));
 const Arc = lazy(() => import('../pages/Arc/Arc'));
 const Search = lazy(() => import('../pages/Search/Search'));
 const ScanPage = lazy(() => import('../pages/ScansPage/ScanPage'));
@@ -20,8 +20,8 @@ const AppRoutes = () => {
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/tomes/:tomelist" element={<TomeHome />} />
                         <Route exact path="/tomes/:tomelist/:tomenumber" element={<Tome />} />
-                        <Route exact path="/arcs" element={<ArcsHome />} />
-                        <Route exact path="/arcs/:selectedarc" element={<Arc />} />
+                        <Route exact path="/saga" element={<Saga />} />
+                        <Route exact path="/saga/:saga/:selectedarc" element={<Arc />} />
                         <Route exact path="/search/:searchtext" element={<Search />} />
                         <Route exact path="/scan/:scansaga/:scanarc/:selectedscan/:selectedpagescan" element={<ScanPage />} />
                         <Route path="*" element={<NotFoundPage />} />
