@@ -13,8 +13,16 @@ function ScanBar({ onFullScreen, onVerticalScan }) {
         }
     };
 
+    // Create style object for scan-bar based on vertical mode
+    const scanBarStyle = !verticalIcon ? {
+        position: 'sticky',
+        top: 0,
+        background: 'black',
+        borderRadius: 0
+    } : {};
+
     return (
-        <div className='scan-bar'>
+        <div className='scan-bar' style={scanBarStyle}>
             <button onClick={onFullScreen} className='scan-bar-button'>
                 <i className="fa-solid fa-expand"></i>
             </button>

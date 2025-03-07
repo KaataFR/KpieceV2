@@ -14,18 +14,27 @@
     border: none;
     color: white;
     background-color: transparent;
-    padding: 0 30px 0 20px;
+    padding: 0;
     border-radius: 15px;
     cursor: pointer;
     font-family: 'Poetsen One', sans-serif;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in;
     text-transform: uppercase;
     height: 100%;
+    text-align: center;
+    width: 75px;
 }
 
+.scan-bar .scan-bar-button:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+
+
 .scan-bar button:hover {
-    transform: scale(1.05);
+    background-color: rgba(165, 152, 152, 0.219);
 }
 
 .scan-bar-ost {

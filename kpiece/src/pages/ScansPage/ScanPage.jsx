@@ -15,6 +15,10 @@ const ScanPage = () => {
     const [error, setError] = useState(null);
     const [verticalScan, setVerticalScan] = useState(false);
     const [isFullScreen, setIsFullScreen] = useState(false);
+    const [currentPageInput, setCurrentPageInput] = useState(selectedpagescan || 1);
+
+    // Nouveau: stockage des données search.json
+    const [searchData, setSearchData] = useState([]);
 
     const handleFullScreen = () => {
         if (!document.fullscreenElement) {
@@ -33,49 +37,78 @@ const ScanPage = () => {
         }
     };
 
+    // Audio for "To Be Continued" page
+    const [audio] = useState(new Audio('https://kpiece2.s3.eu-west-3.amazonaws.com/ost/tobecontinued.mp3'));
+
+    useEffect(() => {
+        // Chargement de search.json
+        const fetchSearchData = async () => {
+            try {
+                const response = await fetch('https://kpiece2.s3.eu-west-3.amazonaws.com/data/search.json');
+                if (!response.ok) {
+                    throw new Error('Impossible de récupérer search.json');
+                }
+                const data = await response.json();
+                setSearchData(data);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+        fetchSearchData();
+    }, []);
+
+    useEffect(() => {
+        // Only play audio when the custom "To Be Continued" page is shown
+        if (!loading && !preloading && pages.length > 0) {
+            const maxPage = pages[pages.length - 1];
+            const isLastPage = parseInt(selectedpagescan) === maxPage + 1;
+
+            if (isLastPage) {
+                audio.volume = 0.05; // Set volume to 5%
+                audio.currentTime = 0; // Reset audio to beginning
+                audio.play().catch(err => console.error('Audio playback failed:', err));
+            }
+        }
+    }, [selectedpagescan, pages, loading, preloading, audio]);
+
     const handleVerticalScan = () => {
         setVerticalScan(prev => !prev);
     };
 
-    // Handler for scan select change - navigate to the chosen scan's first page.
+    // Handler for scan select change - navigate to the chosen scan's first page
     const handleScanSelect = (e) => {
         const newScan = e.target.value;
         navigate(`/scan/${scansaga}/${scanarc}/${newScan}/1`);
     };
 
-    // Add an extra page with 3 customizable divs
+    // Custom Page
     const getCustomPageContent = () => {
         return (
             <div className="last-page">
-
+                <h2> TO BE CONTINUED... </h2>
                 <div className="bouton-last-page next-scan">
                     <button onClick={handleNextScan}>
                         <i className="fa-solid fa-arrow-right"></i> Scan suivant
                     </button>
                 </div>
-
                 <div className="bouton-last-page back-page">
                     <button onClick={handleReturnToReading}>
                         <i className="fa-solid fa-arrow-left"></i> RETOUR
                     </button>
                 </div>
-
                 <div className="bouton-last-page back-scan">
                     <button onClick={handlePrevScan}>
                         <i className="fa-solid fa-arrow-left"></i> Scan précédent
                     </button>
                 </div>
-
             </div>
         );
     };
 
-    // Check if current page is the custom page (maxPage + 1)
     const isCustomPage = (page, maxPageNum) => {
         return page === maxPageNum + 1;
     };
 
-    // Function to preload all images
     const preloadImages = (pagesArray) => {
         setPreloading(true);
         let loadedCount = 0;
@@ -110,15 +143,12 @@ const ScanPage = () => {
                     throw new Error('Failed to fetch scan data');
                 }
                 const data = await response.json();
-                // Save all scans for the current arc for the select dropdown.
                 setArcScans(data);
                 const scanData = data.find(scan => scan.scan === parseInt(selectedscan));
                 if (scanData) {
                     const maxPages = scanData.maxpages;
-                    console.log('Max pages:', maxPages);
                     const pagesArray = Array.from({ length: maxPages }, (_, i) => i + 1);
                     setPages(pagesArray);
-                    // Start preloading all images
                     preloadImages(pagesArray);
                 } else {
                     throw new Error('Scan not found');
@@ -132,14 +162,16 @@ const ScanPage = () => {
         fetchScanData();
     }, [scansaga, scanarc, selectedscan]);
 
-    // Scroll to top when page changes
     useEffect(() => {
         if (!loading && !preloading) {
-            window.scrollTo(0, 0);
+            window.scrollTo(0, 170);
         }
     }, [selectedpagescan, loading, preloading]);
 
-    // Loading component with progress bar
+    useEffect(() => {
+        setCurrentPageInput(selectedpagescan || 1);
+    }, [selectedpagescan]);
+
     const LoadingComponent = () => {
         if (preloading) {
             return (
@@ -161,22 +193,17 @@ const ScanPage = () => {
     if (loading || preloading) return <LoadingComponent />;
     if (error) return <div className="scan-page-error">Scan Non disponible</div>;
 
-    // Determine current page (if missing, default to 1)
     const currentPage = selectedpagescan && pages.includes(parseInt(selectedpagescan))
         ? parseInt(selectedpagescan)
         : 1;
     const maxPage = pages[pages.length - 1];
-    // Check if current page is the custom page
     const showCustomPage = isCustomPage(parseInt(selectedpagescan), maxPage);
-    // When currentPage is not in pages and not the custom page, show normal final view
     const isFinalView = !pages.includes(currentPage) && !showCustomPage;
 
-    // Navigation function for updating the URL with a new page number
     const navigateToPage = (page) => {
         navigate(`/scan/${scansaga}/${scanarc}/${selectedscan}/${page}`);
     };
 
-    // In horizontal mode we wrap the image in a container to detect left/right clicks.
     const handleImageClick = (e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         const clickX = e.clientX - rect.left;
@@ -193,19 +220,51 @@ const ScanPage = () => {
         }
     };
 
-    // Handlers for final view buttons
+    // Modification: utiliser searchData pour saga/arc quand on change de scan
     const handlePrevScan = () => {
         const prevScan = parseInt(selectedscan) - 1;
-        navigate(`/scan/${scansaga}/${scanarc}/${prevScan}/1`);
+        const foundPrev = searchData.find(item => prevScan >= item.firstscan && prevScan <= item.lastscan);
+        if (foundPrev) {
+            navigate(`/scan/${foundPrev.saga}/${foundPrev.arc}/${prevScan}/1`);
+        } else {
+            console.log('Scan précédent introuvable dans searchData');
+        }
     };
 
     const handleNextScan = () => {
         const nextScan = parseInt(selectedscan) + 1;
-        navigate(`/scan/${scansaga}/${scanarc}/${nextScan}/1`);
+        const foundNext = searchData.find(item => nextScan >= item.firstscan && nextScan <= item.lastscan);
+        if (foundNext) {
+            navigate(`/scan/${foundNext.saga}/${foundNext.arc}/${nextScan}/1`);
+        } else {
+            console.log('Scan suivant introuvable dans searchData');
+        }
     };
 
     const handleReturnToReading = () => {
         navigateToPage(maxPage);
+    };
+
+    const handlePageInputChange = (e) => {
+        const value = e.target.value;
+        if (/^\d*$/.test(value)) {
+            setCurrentPageInput(value);
+        }
+    };
+
+    const handlePageInputBlur = () => {
+        const page = parseInt(currentPageInput, 10);
+        if (page >= 1 && page <= maxPage) {
+            navigateToPage(page);
+        } else {
+            setCurrentPageInput(currentPage);
+        }
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handlePageInputBlur();
+        }
     };
 
     let content = null;
@@ -257,11 +316,16 @@ const ScanPage = () => {
 
     return (
         <div className="scan-page">
-            {/* New elements above the scan bar */}
-
             <div className='top-scan-element'>
                 <div className="page-counter">
-                    Page {currentPage} / {maxPage}
+                    Page <input
+                        type="text"
+                        value={currentPageInput}
+                        onChange={handlePageInputChange}
+                        onBlur={handlePageInputBlur}
+                        onKeyPress={handleKeyPress}
+                        style={{ width: '50px', textAlign: 'center' }}
+                    /> / {maxPage}
                 </div>
                 <div className="select-scan">
                     <select value={selectedscan} onChange={handleScanSelect}>

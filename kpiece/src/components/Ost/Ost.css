@@ -91,9 +91,13 @@
     gap: 10px;     
     width: 100px; 
   }  
+
+  .volume-container {
+    font-size: 12px;
+  }
   
   .volume-slider {     
-    width: 100%;     
+    width: 75px;     
     height: 8px;     
     -webkit-appearance: none;     
     appearance: none;     
@@ -105,8 +109,8 @@
   .volume-slider::-webkit-slider-thumb {     
     -webkit-appearance: none;     
     appearance: none;     
-    width: 16px;     
-    height: 16px;     
+    width: 12px;     
+    height: 12px;     
     border-radius: 50%;     
     background: linear-gradient(45deg, #e41f1f, #800000);     
     cursor: pointer;     
@@ -120,7 +124,7 @@
   }  
   
   /* Style pour le bouton play/pause */
-  .play-pause-button {
+  .track-navigation .play-pause-button {
     background-color: black;
     color: rgb(247, 0, 0);
     border: none;
@@ -132,12 +136,17 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 24px;
   }
 
   
   .play-pause-button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+  .track-navigation {     
+    display: flex;     
   }
   
   .track-navigation button {   
@@ -151,13 +160,10 @@
     font-family: 'Poetsen One', sans-serif;     
     text-transform: uppercase;     
     font-size: 15px; 
+    transition: all 0.3s;
   }  
   
-  .reload-button:target {     
-    transform-origin: middle;     
-    transform: scale(1.05);     
-    rotate: 360deg; 
-  }  
+
   
   .mood-buttons {     
     display: flex;     
@@ -168,7 +174,6 @@
   
   .mood-button {     
     background-color: black;  
-
     color: white;     
     border: none;     
     border-radius: 10px;     
@@ -204,8 +209,43 @@
 
   .current-audio{
     position: absolute;
-    right: 10px;
-    border: 2px solid #e41f1f;
+    top: -40px;
+    right: 0px;
+    border: 1px solid #e41f1f;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    background-color: rgba(43, 18, 13, 0.301);
   }
+
+  .current-audio p{
+    animation: scroll-text 5s cubic-bezier(0.1, 0, 0.7, 1) infinite;
+    margin: 0;
+     font-style: italic ;
+    font-size: 13px;
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .track-navigation .random-button {
+    background-color: black;
+    color: rgb(216, 196, 19);
+  }
+
+   .track-navigation .random-button:hover {
+   transform: scale(1.2);
+
+  }
+

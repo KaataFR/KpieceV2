@@ -87,6 +87,8 @@
     }
 }
 
+/* LAST PAGE */ 
+
 .last-page {
     display: flex;
     flex-direction: column;
@@ -97,6 +99,29 @@
     height: 600px;
     width: 1200px;
     margin: 0 auto;
+    gap: 5px;
+}
+
+.last-page h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: appear 2s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 10px rgba(226, 0, 0, 0.3);
+    font-family: 'pirata one', cursive;
+    font-weight: lighter;
+    animation: slideInFromLeft 1s ease;
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .bouton-last-page {
@@ -115,10 +140,9 @@
     transition: all 0.3s ease;
     font-size: 18px;
     text-shadow: 0 0 2px black;
-    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all  2s cubic-bezier(0.075, 0.82, 0.165, 1);
     animation: slideInFromLeft 1s ease;
 }
-
 
   
   @keyframes slideInFromLeft {
@@ -268,4 +292,14 @@
 .right-half {
     right: 0;
     cursor: url('../../../public/img/assets/left-arrow.png'); /* Change to the path of your right arrow cursor image */
+}
+
+
+.page-counter input{
+    background-color: #000000;
+    color: white;
+    box-shadow: none;
+    border: none;
+    font-family: 'piedra', cursive;
+    font-size: 20px;
 }

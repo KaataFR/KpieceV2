@@ -2,25 +2,36 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Ost.css';
 
 const Ost = () => {
-    const [isOn, setIsOn] = useState(false);
-    const [volume, setVolume] = useState(50);
+    // On supprime "happy" et on ne garde que les moods désirés
+    const [tracks, setTracks] = useState({
+        chill: [],
+        danger: [],
+        emotion: [],
+        epic: [],
+        fight: [],
+        fun: [],
+        mysterious: [],
+        sad: []
+    });
+
+    const [isOn, setIsOn] = useState(() => {
+        const savedIsOn = localStorage.getItem('ostIsOn');
+        return savedIsOn !== null ? JSON.parse(savedIsOn) : false;
+    });
+
+    const [volume, setVolume] = useState(() => {
+        const savedVolume = localStorage.getItem('ostVolume');
+        return savedVolume !== null ? JSON.parse(savedVolume) : 50;
+    });
     const [currentMood, setCurrentMood] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isLoading, setIsLoading] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
-    const [tracks, setTracks] = useState({
-        happy: [],
-        sad: [],
-        chill: [],
-        mysterious: [],
-        fight: [],
-        epic: []
-    });
     const [ostInfo, setOstInfo] = useState([]);
     const audioRef = useRef(null);
     const baseUrl = "https://kpiece2.s3.eu-west-3.amazonaws.com/ost/";
 
-    // Charge les informations des OST depuis le JSON
+    // Récupération du JSON ost.json
     const fetchOstInfo = async () => {
         try {
             const response = await fetch("https://kpiece2.s3.eu-west-3.amazonaws.com/ost/ost.json");
@@ -36,59 +47,77 @@ const Ost = () => {
         }
     };
 
-    // Charge les pistes disponibles pour un mood donné
+    // Fonction pour jouer une piste aléatoire du mood actuel
+    const handleRandomTrack = () => {
+        if (currentMood && tracks[currentMood] && tracks[currentMood].length > 0) {
+            // Génère un index aléatoire différent de l'index actuel
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * tracks[currentMood].length);
+            } while (randomIndex === currentIndex && tracks[currentMood].length > 1);
+
+            // Joue la piste aléatoire
+            playTrack(currentMood, randomIndex);
+        }
+    };
+
+    // Charge chaque piste sous forme d'objet { fileName, displayName }
     const loadTracksForMood = async (mood, info = null) => {
         setIsLoading(true);
-        const moodTracks = [];
-        
-        // Utilise les infos déjà chargées ou charge-les si nécessaire
-        const ostData = info || ostInfo || await fetchOstInfo();
-        
-        // Trouve le nombre de pistes pour ce mood
-        const moodInfo = ostData.find(item => item.name === mood);
-        
-        if (moodInfo) {
-            // Génère la liste des pistes selon le format {mood}1.mp3 à {mood}{ostnumber}.mp3
-            for (let i = 1; i <= moodInfo.ostnumber; i++) {
-                moodTracks.push(`${mood}${i}.mp3`);
-            }
+
+        // On utilise les infos déjà chargées sinon on les fetch
+        const data = info || ostInfo || await fetchOstInfo();
+
+        // Trouve l'objet décrivant le mood dans ost.json
+        const moodInfo = data.find(item => item.name === mood);
+        if (!moodInfo) {
+            console.error(`Aucune info trouvée pour le mood: ${mood}`);
+            setIsLoading(false);
+            return [];
         }
+
+        // moodInfo.ostnumber = nombre de pistes
+        // moodInfo.ostname = tableau de titres (ex. ["Mother Sea", "Gold and Oden", …])
+        const moodTracks = moodInfo.ostname.map((title, idx) => ({
+            fileName: `${idx + 1}.mp3`,  // ex: "1.mp3", "2.mp3"…
+            displayName: title          // ex: "Mother Sea", …
+        }));
 
         setTracks(prev => ({
             ...prev,
             [mood]: moodTracks
         }));
-
         setIsLoading(false);
         return moodTracks;
     };
 
-    // Joue une piste déterminée (index) pour un mood donné
+    // Joue la piste (index) du mood
     const playTrack = async (mood, index) => {
-        // Active le lecteur s'il était éteint
+        // Allume l'OST si elle est éteinte
         if (!isOn) {
             setIsOn(true);
         }
         setIsLoading(true);
-        let moodTracks = tracks[mood];
 
+        // Récupération des pistes pour le mood
+        let moodTracks = tracks[mood];
         if (!moodTracks || moodTracks.length === 0) {
             moodTracks = await loadTracksForMood(mood);
         }
+
         if (moodTracks && moodTracks.length > 0) {
-            // Gestion du débordement d'index (pagination circulaire)
+            // Gestion du débordement (index trop petit ou trop grand)
             if (index >= moodTracks.length) {
                 index = 0;
             } else if (index < 0) {
                 index = moodTracks.length - 1;
             }
-            const track = moodTracks[index];
-            const trackUrl = `${baseUrl}${mood}/${track}`;
+
+            const trackObj = moodTracks[index];
+            const trackUrl = `${baseUrl}${mood}/${trackObj.fileName}`;
 
             if (audioRef.current) {
-                if (audioRef.current.src) {
-                    audioRef.current.pause();
-                }
+                audioRef.current.pause();
                 audioRef.current.src = trackUrl;
                 audioRef.current.volume = volume / 100;
                 audioRef.current.oncanplaythrough = () => {
@@ -118,38 +147,34 @@ const Ost = () => {
         }
     };
 
-    // Sélectionne un mood si différent (sans recharger si déjà sélectionné)
+    // Sélectionne un mood différent
     const handleMoodClick = (mood) => {
         if (currentMood !== mood) {
-            // Commence par la première piste du mood sélectionné
             playTrack(mood, 0);
         }
     };
 
-    // Bouton suivant : passe à la piste suivante du mood en cours
     const handleNext = () => {
         if (currentMood) {
             playTrack(currentMood, currentIndex + 1);
         }
     };
 
-    // Bouton précédent : revient à la piste précédente du mood en cours
     const handlePrev = () => {
         if (currentMood) {
             playTrack(currentMood, currentIndex - 1);
         }
     };
 
-    // Gestion du volume
     const handleVolumeChange = (e) => {
         const newVolume = e.target.value;
         setVolume(newVolume);
+        localStorage.setItem('ostVolume', JSON.stringify(newVolume));
         if (audioRef.current) {
             audioRef.current.volume = newVolume / 100;
         }
     };
 
-    // Gère la pause et la reprise de l'audio
     const handlePlayPause = () => {
         if (audioRef.current) {
             if (isPlaying) {
@@ -169,6 +194,7 @@ const Ost = () => {
         }
     };
 
+    // Éteint l'OST quand isOn passe à false
     useEffect(() => {
         if (!isOn && audioRef.current) {
             audioRef.current.pause();
@@ -176,25 +202,46 @@ const Ost = () => {
         }
     }, [isOn]);
 
-    // Charge les infos du JSON et initialise les pistes au démarrage
+    // Au montage ou quand isOn change :
+    // charge l'ost.json et initialise les pistes
     useEffect(() => {
         if (isOn) {
             const initializeOst = async () => {
                 setIsLoading(true);
                 const info = await fetchOstInfo();
-                
-                // Initialise toutes les pistes pour chaque mood
-                for (const moodInfo of info) {
-                    await loadTracksForMood(moodInfo.name, info);
+                // On précharge les pistes pour tous les moods
+                for (const moodItem of info) {
+                    await loadTracksForMood(moodItem.name, info);
                 }
                 setIsLoading(false);
             };
-            
             initializeOst();
         } else if (audioRef.current) {
             audioRef.current.pause();
             setIsPlaying(false);
         }
+    }, [isOn]);
+
+    // Auto-play de la piste suivante quand la piste se termine
+    useEffect(() => {
+        if (audioRef.current) {
+            const handleTrackEnded = () => {
+                if (currentMood) {
+                    playTrack(currentMood, currentIndex + 1);
+                }
+            };
+            audioRef.current.addEventListener('ended', handleTrackEnded);
+            return () => {
+                if (audioRef.current) {
+                    audioRef.current.removeEventListener('ended', handleTrackEnded);
+                }
+            };
+        }
+    }, [currentMood, currentIndex]);
+
+    // Enregistre l'état On/Off dans localStorage
+    useEffect(() => {
+        localStorage.setItem('ostIsOn', JSON.stringify(isOn));
     }, [isOn]);
 
     return (
@@ -214,19 +261,55 @@ const Ost = () => {
 
             {isOn && (
                 <>
-                    <button
-                        className="play-pause-button"
-                        onClick={handlePlayPause}
-                        disabled={isLoading || (!currentMood && !audioRef.current?.src)}
+
+
+
+
+                    <div className="track-navigation">
+                        <button
+                            className="prev-button"
+                            onClick={handlePrev}
+                            disabled={!currentMood || isLoading}
+                        >
+                            <i className="fa-solid fa-backward-step"></i>
+                        </button>
+
+
+                        <button
+                            className="play-pause-button"
+                            onClick={handlePlayPause}
+                            disabled={isLoading || (!currentMood && !audioRef.current?.src)}
+                        >
+                            {isLoading ? (
+                                <i className="fa-solid fa-spinner fa-spin"></i>
+                            ) : isPlaying ? (
+                                <i className="fa-solid fa-pause"></i>
+                            ) : (
+                                <i className="fa-solid fa-play"></i>
+                            )}
+                        </button>
+
+
+
+                        <button
+                            className="next-button"
+                            onClick={handleNext}
+                            disabled={!currentMood || isLoading}
+                        >
+                            <i className="fa-solid fa-forward-step"></i>
+                        </button>
+
+                        <button className='random-button'
+                            onClick={handleRandomTrack} 
+                            disabled={!currentMood || isLoading}
                     >
-                        {isLoading ? (
-                            <i className="fa-solid fa-spinner fa-spin"></i>
-                        ) : isPlaying ? (
-                            <i className="fa-solid fa-pause"></i>
-                        ) : (
-                            <i className="fa-solid fa-play"></i>
-                        )}
+                        <i className="fa-solid fa-shuffle"></i>
+                        
                     </button>
+                    </div>
+
+
+
                     <div className="volume-container">
                         <input
                             type="range"
@@ -236,22 +319,20 @@ const Ost = () => {
                             onChange={handleVolumeChange}
                             className="volume-slider"
                         />
-                    </div>
-
-                    <div className="track-navigation">
-                        <button className="prev-button" onClick={handlePrev} disabled={!currentMood || isLoading}>
-                            <i className="fa-solid fa-backward"></i>
-                        </button>
-                        <button className="next-button" onClick={handleNext} disabled={!currentMood || isLoading}>
-                            <i className="fa-solid fa-forward"></i>
-                        </button>
+                        {volume}%
                     </div>
 
                     <div className="mood-buttons">
                         {Object.keys(tracks).map(mood => (
                             <button
                                 key={mood}
-                                className={`mood-button ${currentMood === mood ? 'active' : ''} ${isLoading && currentMood !== mood ? 'disabled' : ''}`}
+                                className={
+                                    `mood-button ${currentMood === mood ? 'active' : ''
+                                    } ${isLoading && currentMood !== mood
+                                        ? 'disabled'
+                                        : ''
+                                    }`
+                                }
                                 onClick={() => handleMoodClick(mood)}
                                 disabled={isLoading && currentMood !== mood}
                             >
@@ -261,9 +342,11 @@ const Ost = () => {
                     </div>
 
                     <div className="current-audio">
-                        {audioRef.current?.src
-                            ? `Ost: ${audioRef.current.src.split('/').pop()}`
-                            : 'Aucune Ost chargé'}
+                        <p> <i className="fa-solid fa-music"></i>
+                            {currentMood && tracks[currentMood] && tracks[currentMood][currentIndex]
+                                ? `  ${tracks[currentMood][currentIndex].displayName}.mp3`
+                                : 'Aucune Ost chargé'}
+                        </p>
                     </div>
 
                     <audio ref={audioRef} />
