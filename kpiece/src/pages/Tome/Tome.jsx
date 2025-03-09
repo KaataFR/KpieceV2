@@ -91,6 +91,7 @@ const Tome = () => {
                 componentImgLink={`https://kpiece2.s3.eu-west-3.amazonaws.com/img/tomes/${tomelist}/${tomenumber}.webp`}
                 scanCounter={tomeData.lastscan - tomeData.firstscan}
                 scans={scans}
+                componentLink={`/tomes/${tomelist}/${tomenumber}/01`}
             />
         </div>
     );

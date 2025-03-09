@@ -62,7 +62,7 @@
 }
 
 .scan-card-content {
-    width: 100%;
+    width: 300px;
     padding: 10px 0;
     text-align: center;
 }
@@ -70,10 +70,11 @@
 .scan-card-content h4 {
     margin: 0 0 5px 0;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: lighter;
     position: relative;
-    font-family: "Suez One", serif;
+    font-family: "Poetsen One", sans-serif;
     word-spacing: 2px;
+
 }
 
 .scan-card-content h4::after {
@@ -82,7 +83,7 @@
     width: 75px;
     height: 2px;
     background-color: white;
-    margin: 5px auto 0;
+    margin: 10px auto 0;
     border-radius: 10px;
 }
 

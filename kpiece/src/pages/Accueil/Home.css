@@ -12,9 +12,9 @@
 .home-page h2 {
     font-size: 26px;
     text-shadow: 0 0 2px #fff;
-    letter-spacing: 1px;
     position: relative;
     font-weight: 400;
+    font-family: 'metropolis', sans-serif;
 }
 
 .home-page h2::after {

@@ -68,6 +68,7 @@ const Arc = () => {
             scanCounter={scanCounter}
             scans={scans}
             loading={loading}
+            componentLink=""
         />
     );
 };

@@ -4,6 +4,7 @@ import './SelectedComponent.css';
 
 const SelectedComponent = ({
     componentName,
+    componentLink,
     componentImgLink,
     scanCounter,
     scans // on reçoit l'ensemble des scans en prop
@@ -36,7 +37,11 @@ const SelectedComponent = ({
                 <div className="back-button" onClick={handleClick}>
                     <i className="fa-solid fa-arrow-left"></i>
                 </div>
-                <div className="Selected-Component-card">
+                <div 
+                    className="Selected-Component-card"
+                    onClick={() => navigate(componentLink || '#')}
+                    style={{ cursor: componentLink ? 'pointer' : 'default' }}
+                >
                     <img
                         src={componentImgLink}
                         alt={componentName}

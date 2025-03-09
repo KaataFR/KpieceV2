@@ -10,6 +10,7 @@ const Search = lazy(() => import('../pages/Search/Search'));
 const ScanPage = lazy(() => import('../pages/ScansPage/ScanPage'));
 const NotFoundPage = lazy(() => import('../pages/404/404'));
 const Layout = lazy(() => import('../Layout/Layout'));
+const ScanTome = lazy(() => import('../pages/ScanTome/ScanTome'));
 
 const AppRoutes = () => {
     return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/tomes/:tomelist" element={<TomeHome />} />
                         <Route exact path="/tomes/:tomelist/:tomenumber" element={<Tome />} />
+                        <Route exact path="/tomes/:tomelist/:tomenumber/:selectedpagetome" element={<ScanTome />} />
                         <Route exact path="/saga" element={<Saga />} />
                         <Route exact path="/saga/:saga/:selectedarc" element={<Arc />} />
                         <Route exact path="/search/:searchtext" element={<Search />} />
