@@ -1,0 +1,47 @@
+[
+    {
+      "scan": 96,
+      "name": "Le pire bandit de tout East Blue",
+      "arc": "loguetown",
+      "tome": 11,
+      "maxpages": 18,
+      "date": "12 Juillet 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 97,
+      "name": "Le troisième kitetsu",
+      "arc": "loguetown",
+      "tome": 11,
+      "maxpages": 19,
+      "date": "19 Juillet 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 98,
+      "name": "Un ciel menaçant",
+      "arc": "loguetown",
+      "tome": 11,
+      "maxpages": 19,
+      "date": "26 Juillet 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 99,
+      "name": "Luffy est mort",
+      "arc": "loguetown",
+      "tome": 11,
+      "maxpages": 18,
+      "date": "2 Août 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 100,
+      "name": "Et ainsi débuta la légende",
+      "arc": "loguetown",
+      "tome": 12,
+      "maxpages": 24,
+      "date": "9 Août 1999",
+      "saga": "eastblue"
+    }
+  ]

@@ -1,0 +1,246 @@
+[
+    {
+      "scan": 69,
+      "name": "Arlong Park",
+      "arc": "arlongpark",
+      "tome": 8,
+      "maxpages": 20,
+      "date": "19 Décembre 1998",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 70,
+      "name": "L'odyssée d'Usopp le brave",
+      "arc": "arlongpark",
+      "tome": 8,
+      "maxpages": 19,
+      "date": "4 Janvier 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 71,
+      "name": "Les rois de la création",
+      "arc": "arlongpark",
+      "tome": 8,
+      "maxpages": 19,
+      "date": "11 Janvier 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 72,
+      "name": "Conformément à ses moyens",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 20,
+      "date": "18 Janvier 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 73,
+      "name": "Le terrible monstre venu de 'Grand Line' ",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "25 Janvier 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 74,
+      "name": "Buisness is buiness",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "1 Février 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 75,
+      "name": "Cartes marines et hommes-poissons",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "8 Février 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 76,
+      "name": "L'heure de la sieste",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "15 Février 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 77,
+      "name": "Les prémices d'un rêve",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "22 Février 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 78,
+      "name": "Belmer",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "1 Mars 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 79,
+      "name": "Vivre",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 18,
+      "date": "8 Mars 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 80,
+      "name": "Un crime est un crime",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "15 Mars 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 81,
+      "name": "Larmes",
+      "arc": "arlongpark",
+      "tome": 9,
+      "maxpages": 19,
+      "date": "20 Mars 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 82,
+      "name": "OK, Let's Stand Up !",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "29 Mars 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 83,
+      "name": "Luffy in black",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "5 Avril 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 84,
+      "name": "Mort-vivant",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "12 Avril 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 85,
+      "name": "Trois sabres contre six",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "19 Avril 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 86,
+      "name": "Esprit chevaleresque versus karaté aquatique",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 20,
+      "date": "26 Avril 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 87,
+      "name": "Fini de jouer",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "10 Mai 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 88,
+      "name": "Mourir ensemble !!",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "17 Mai 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 89,
+      "name": "Remplacement",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "24 Mai 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 90,
+      "name": "De quoi es-tu capable ?",
+      "arc": "arlongpark",
+      "tome": 10,
+      "maxpages": 19,
+      "date": "31 Mai 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 91,
+      "name": "Darts",
+      "arc": "arlongpark",
+      "tome": 11,
+      "maxpages": 20,
+      "date": "7 Juin 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 92,
+      "name": "Un bonheur simple ?",
+      "arc": "arlongpark",
+      "tome": 11,
+      "maxpages": 19,
+      "date": "14 Juin 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 93,
+      "name": "Chute libre",
+      "arc": "arlongpark",
+      "tome": 11,
+      "maxpages": 18,
+      "date": "21 Juin 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 94,
+      "name": "Le second",
+      "arc": "arlongpark",
+      "tome": 11,
+      "maxpages": 17,
+      "date": "28 Juin 1999",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 95,
+      "name": "Tourne, mon beau moulin !",
+      "arc": "arlongpark",
+      "tome": 11,
+      "maxpages": 19,
+      "date": "5 Juillet 1999",
+      "saga": "eastblue"
+    }
+  ]
+  

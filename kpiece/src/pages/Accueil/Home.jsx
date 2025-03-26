@@ -47,7 +47,7 @@ const Home = () => {
             })
             .then(data => {
                 const sortedScans = [...data].sort((a, b) => b.scan - a.scan);
-                const latest = sortedScans.slice(0, 3);
+                const latest = sortedScans.slice(0, 4);
                 console.log("Latest scans:", latest);
                 setLatestScans(latest);
                 setLoading(false);

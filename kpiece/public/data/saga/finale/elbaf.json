@@ -151,5 +151,14 @@
         "maxpages": 16,
         "date": "7 Mars 2025",
         "saga": "finale"
+    },
+    {
+        "scan": 1143,
+        "name": "Les chevaliers divins",
+        "arc": "elbaf",
+        "tome": 112,
+        "maxpages": 19,
+        "date": "21 Mars 2025",
+        "saga": "finale"
     }
 ]

@@ -1,0 +1,480 @@
+[
+    {
+        "scan": 322,
+        "name": "Le 'puffing Tom'",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 18,
+        "date": "24 Mai 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 323,
+        "name": "Water seven, la cité sur l'eau",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 17,
+        "date": "31 Mai 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 324,
+        "name": "Aventure dans la cité sur l'eau",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 18,
+        "date": "7 Juin 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 325,
+        "name": "La Franky Family",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 19,
+        "date": "14 Juin 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 326,
+        "name": "Monsieur Icebarg",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 17,
+        "date": "21 Juin 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 327,
+        "name": "Le quai n° 1 de l'île au Chantier Naval",
+        "arc": "waterseven",
+        "tome": 34,
+        "maxpages": 19,
+        "date": "28 Juin 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 328,
+        "name": "Enlèvement de pirate",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 20,
+        "date": "12 Juillet 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 329,
+        "name": "Mon nom est Franky",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 18,
+        "date": "17 Juillet 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 330,
+        "name": "J'ai pris ma décision",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 17,
+        "date": "26 Juillet 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 331,
+        "name": "Violente dispute",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 19,
+        "date": "2 Août 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 332,
+        "name": "Luffy versus Usopp",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 18,
+        "date": "9 Août 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 333,
+        "name": "Capitaine",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 19,
+        "date": "23 Août 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 334,
+        "name": "L'incident de la chambre close",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 18,
+        "date": "30 Août 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 335,
+        "name": "Warning",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 18,
+        "date": "6 Septembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 336,
+        "name": "Luffy versus Franky",
+        "arc": "waterseven",
+        "tome": 35,
+        "maxpages": 18,
+        "date": "13 Septembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 337,
+        "name": "Les gardes du corps de la 'cité sur l'eau'",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 20,
+        "date": "18 Septembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 338,
+        "name": "Coup de vent",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 18,
+        "date": "27 Septembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 339,
+        "name": "Rumeur",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 19,
+        "date": "4 Octobre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 340,
+        "name": "Une femme ténébreuse",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 19,
+        "date": "9 Octobre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 341,
+        "name": "Démon",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 19,
+        "date": "18 Octobre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 342,
+        "name": "Les messagers des ténèbres",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 18,
+        "date": "25 Octobre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 343,
+        "name": "Cipher Pol n° 9",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 19,
+        "date": "1er Novembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 344,
+        "name": "Force de résistance",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 19,
+        "date": "8 Novembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 345,
+        "name": "Agents infiltrés",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 18,
+        "date": "15 Novembre 2004",
+        "saga": "waterseven"
+    },  
+    {
+        "scan": 346,
+        "name": "Justice n° 9",
+        "arc": "waterseven",
+        "tome": 36,
+        "maxpages": 18,
+        "date": "29 Novembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 347,
+        "name": "Le rokushiki : l'art des six pouvoirs",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "6 Décembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 348,
+        "name": "Puissance de frappe",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "13 Décembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 349,
+        "name": "Un simple citoyen",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 16,
+        "date": "20 Décembre 2004",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 350,
+        "name": "L'entrepôt sous le pont",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "3 Janvier 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 351,
+        "name": "Klabautermann",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "17 Janvier 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 352,
+        "name": "'Tom's workers'",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 18,
+        "date": "24 Janvier 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 353,
+        "name": "Un charpentier légendaire",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "31 Janvier 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 354,
+        "name": "Le train des mers",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 18,
+        "date": "7 Février 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 355,
+        "name": "Spandam",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 18,
+        "date": "14 Février 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 356,
+        "name": "Monsieur Tom",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 19,
+        "date": "28 Février 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 357,
+        "name": "Cutty Flam",
+        "arc": "waterseven",
+        "tome": 37,
+        "maxpages": 20,
+        "date": "7 Mars 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 358,
+        "name": "Résurrection",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 20,
+        "date": "14 Mars 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 359,
+        "name": "Bingo",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 19,
+        "date": "19 Mars 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 360,
+        "name": "Départ imminent",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 19,
+        "date": "28 Mars 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 361,
+        "name": "Post-scriptum",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 19,
+        "date": "4 Avril 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 362,
+        "name": "Marée descendante",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 19,
+        "date": "11 Avril 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 363,
+        "name": "Aqua laguna",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 16,
+        "date": "18 Avril 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 364,
+        "name": "Kokoro",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 17,
+        "date": "25 Avril 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 365,
+        "name": "'Rocketman'!",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 17,
+        "date": "9 Mai 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 366,
+        "name": "En avant toute !",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 17,
+        "date": "16 Mai 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 367,
+        "name": "Sniperking",
+        "arc": "waterseven",
+        "tome": 38,
+        "maxpages": 18,
+        "date": "23 Mai 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 368,
+        "name": "Battle game à bord du train des mers",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 20,
+        "date": "30 Mai 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 369,
+        "name": "L'art martial des nouilles",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 18,
+        "date": "6 Juin 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 370,
+        "name": "Tu n'es pas seule",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 19,
+        "date": "13 Juin 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 371,
+        "name": "L'admirable colonel T. Bone",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 17,
+        "date": "20 Juin 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 372,
+        "name": "Parage shoot",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 18,
+        "date": "27 juin 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 373,
+        "name": "Un mal nécessaire",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 17,
+        "date": "4 juillet 2005",
+        "saga": "waterseven"
+    },
+    {
+        "scan": 374,
+        "name": "Opération sauvetage",
+        "arc": "waterseven",
+        "tome": 39,
+        "maxpages": 19,
+        "date": "16 juillet 2005",
+        "saga": "waterseven"
+    }
+        
+]

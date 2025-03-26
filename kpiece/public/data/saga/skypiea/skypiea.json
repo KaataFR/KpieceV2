@@ -1,0 +1,597 @@
+[
+    {
+        "scan": 237,
+        "name": "Dans les cieux",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 19,
+        "date": "8 Juillet 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 238,
+        "name": "Les portes du paradis",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 17,
+        "date": "15 Juillet 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 239,
+        "name": "Angel Beach",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 15,
+        "date": "22 Juillet 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 240,
+        "name": "Les dials, source d'énergie",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 17,
+        "date": "29 Juillet 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 241,
+        "name": "Le jugement divin",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 16,
+        "date": "5 Août 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 242,
+        "name": "Criminels de 2e catégorie",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 17,
+        "date": "12 Août 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 243,
+        "name": "Ordalie",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 17,
+        "date": "26 août 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 244,
+        "name": "SOS",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 19,
+        "date": "2 Septembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 245,
+        "name": "Aventure sur l'île de Dieu",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 17,
+        "date": "9 Septembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 246,
+        "name": "Satori, le prélat de la forêt de l'égarement",
+        "arc": "skypiea",
+        "tome": 26,
+        "maxpages": 18,
+        "date": "14 Septembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 247,
+        "name": "L'ordalie des ballons",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 20,
+        "date": "22 Septembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 248,
+        "name": "L'ancien dieu de Skypiea versus le prélat",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 19,
+        "date": "7 Octobre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 249,
+        "name": "Le village caché dans les nuages",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 18,
+        "date": "12 Octobre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 250,
+        "name": "Ballon dragon",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 18,
+        "date": "21 Octobre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 251,
+        "name": "Prélude",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 17,
+        "date": "28 Octobre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 252,
+        "name": "Intersection",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 19,
+        "date": "2 novembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 253,
+        "name": "La Vearth",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 18,
+        "date": "11 Novembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 254,
+        "name": "Aubade",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 16,
+        "date": "18 Novembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 255,
+        "name": "Le boa et les explorateurs",
+        "arc": "skypiea",
+        "tome": 27,
+        "maxpages": 19,
+        "date": "25 Novembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 256,
+        "name": "Wiper le démon furieux",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 20,
+        "date": "2 Décembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 257,
+        "name": "Bataille de dials",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 19,
+        "date": "9 Décembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 258,
+        "name": "Plein de sud différents",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 19,
+        "date": "16 Décembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 259,
+        "name": "Zoro le pirate VS Braham le guerrier",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 18,
+        "date": "30 Décembre 2002",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 260,
+        "name": "Luffy le pirate VS Wiper le démon furieux",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 15,
+        "date": "6 Janvier 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 261,
+        "name": "Genbo le guerrier VS Yama le capitaine de la garde sacrée",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 19,
+        "date": "20 Janvier 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 262,
+        "name": "Chopper le pirate VS Gedatsu le prélat",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 18,
+        "date": "27 Janvier 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 263,
+        "name": "Nami la pirate et le drôle de chevalier VS Hotori et Kotori les vice-capitaines de la garde sacrée",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 19,
+        "date": "3 Février 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 264,
+        "name": "Kamakiri le guerrier VS Ener le dieu",
+        "arc": "skypiea",
+        "tome": 28,
+        "maxpages": 19,
+        "date": "10 Février 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 265,
+        "name": "Robin la pirate versus Yama le capitaine de la garde sacrée",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 20,
+        "date": "17 Février 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 266,
+        "name": "Chopper le pirate versus Om le prélat",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 19,
+        "date": "24 Février 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 267,
+        "name": "Marche",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 17,
+        "date": "3 Mars 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 268,
+        "name": "Suite",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 18,
+        "date": "10 Mars 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 269,
+        "name": "Concerto",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 19,
+        "date": "17 Mars 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 270,
+        "name": "Sérénade",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 19,
+        "date": "24 Mars 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 271,
+        "name": "Zoro le pirate versus Om le prélat",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 18,
+        "date": "7 Avril 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 272,
+        "name": "Drame",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 18,
+        "date": "14 Avril 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 273,
+        "name": "Quintette",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 18,
+        "date": "21 Avril 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 274,
+        "name": "Oratorio",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 20,
+        "date": "28 Avril 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 275,
+        "name": "La divine comédie",
+        "arc": "skypiea",
+        "tome": 29,
+        "maxpages": 19,
+        "date": "12 Mai 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 276,
+        "name": "Shandia rythm",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 20,
+        "date": "19 Mai 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 277,
+        "name": "'Maxim'",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 17,
+        "date": "26 Mai 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 278,
+        "name": "Conis",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "2 Juin 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 279,
+        "name": "Luffy le pirate VS le dieu Ener",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "9 Juin 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 280,
+        "name": "Décollage",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "16 Juin 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 281,
+        "name": "Despia",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 16,
+        "date": "23 Juin 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 282,
+        "name": "Aspirations",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "30 Juin 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 283,
+        "name": "En première ligne pour secourir l'amour",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 19,
+        "date": "7 Juillet 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 284,
+        "name": "Merci",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "14 Juillet 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 285,
+        "name": "Capriccio",
+        "arc": "skypiea",
+        "tome": 30,
+        "maxpages": 18,
+        "date": "21 Juillet 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 286,
+        "name": "Le démon de Shandora",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "28 Juillet 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 287,
+        "name": "Déicide",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "11 Août 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 288,
+        "name": "Malédiction",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 19,
+        "date": "25 Août 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 289,
+        "name": "Nuit de pleine lune",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 21,
+        "date": "1er Septembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 290,
+        "name": "La flamme de Shandora",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "8 Septembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 291,
+        "name": "Nous sommes là",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "13 Septembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 292,
+        "name": "Telle la lune, tu disparais derrière les nuages",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "22 Septembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 293,
+        "name": "Boléro",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 17,
+        "date": "29 Septembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 294,
+        "name": "Raigo",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 18,
+        "date": "6 Octobre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 295,
+        "name": "Giant Jack",
+        "arc": "skypiea",
+        "tome": 31,
+        "maxpages": 17,
+        "date": "11 Octobre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 296,
+        "name": "Haute voltige",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 19,
+        "date": "20 Octobre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 297,
+        "name": "Ode à la terre",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 16,
+        "date": "27 Octobre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 298,
+        "name": "Love song",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 14,
+        "date": "1 Novembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 299,
+        "name": "Fantaisie",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 16,
+        "date": "10 Novembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 300,
+        "name": "Symphonie",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 17,
+        "date": "22 Novembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 301,
+        "name": "Ma route m'a conduit ici",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 19,
+        "date": "1er Décembre 2003",
+        "saga": "skypiea"
+    },
+    {
+        "scan": 302,
+        "name": "Finale",
+        "arc": "skypiea",
+        "tome": 32,
+        "maxpages": 18,
+        "date": "8 Décembre 2003",
+        "saga": "skypiea"
+    }
+
+]

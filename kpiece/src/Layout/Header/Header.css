@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: #000; /* Adding background color to header */
+    background-color: #000;
+    /* Adding background color to header */
 }
 
 header a {
@@ -16,7 +17,8 @@ header a {
     font-size: 55px;
     letter-spacing: 5px;
     text-shadow: 2px 2px 5px rgba(88, 10, 10, 0.7);
-    color: white; /* Making the h1 text color white */
+    color: white;
+    /* Making the h1 text color white */
     cursor: pointer;
 }
 
@@ -60,7 +62,8 @@ header a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 1px rgb(201, 18, 18); /* Adding white text border */
+    text-shadow: 0 0 1px rgb(201, 18, 18);
+    /* Adding white text border */
 }
 
 .header-search {
@@ -87,7 +90,8 @@ header a {
     text-align: center;
     font-family: 'Piedra', cursive;
     font-size: 15px;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adding white text border */
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    /* Adding white text border */
 
 }
 
@@ -96,7 +100,8 @@ header a {
     font-family: 'Piedra', cursive;
 
 }
-.header-search input:focus > .header-search {
+
+.header-search input:focus>.header-search {
     transform: scale(1.1);
 }
 
@@ -121,10 +126,14 @@ header a {
 
 header .fa-solid {
     font-size: 12px;
-    text-shadow: 3px 3px 3px rgb(0, 0, 0); /* Adding white text border */
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    /* Adding white text border */
 }
 
 .header-search input::placeholder {
     font-style: italic;
     opacity: 0.5;
 }
+
+
+

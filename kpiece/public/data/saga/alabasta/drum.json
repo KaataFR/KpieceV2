@@ -1,0 +1,205 @@
+[
+    {
+        "scan": 130,
+        "name": "Vitesse maximale",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "3 Avril 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 131,
+        "name": "Wapol la quincaille",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "10 Avril 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 132,
+        "name": "Tu vois ?",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "17 Avril 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 133,
+        "name": "Aventures dans un pays sans nom",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "24 Avril 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 134,
+        "name": "Le Dr Kureha",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "8 Mai 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 135,
+        "name": "Les lapins des neiges",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 19,
+        "date": "15 Mai 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 136,
+        "name": "Un homme appelé Dolton",
+        "arc": "drum",
+        "tome": 15,
+        "maxpages": 18,
+        "date": "22 Mai 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 137,
+        "name": "Avalanche",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 21,
+        "date": "29 Mai 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 138,
+        "name": "Au sommet",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 18,
+        "date": "5 Juin 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 139,
+        "name": "Tony-Tony Chopper",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 19,
+        "date": "12 Juin 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 140,
+        "name": "Un château enneigé",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 18,
+        "date": "19 Juin 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 141,
+        "name": "Le charlatan",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 19,
+        "date": "26 Juin 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 142,
+        "name": "Tête de mort et cerisiers",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 19,
+        "date": "3 Juillet 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 143,
+        "name": "Maladresse",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 19,
+        "date": "10 Juillet 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 144,
+        "name": "Contes de neige",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 19,
+        "date": "17 Juillet 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 145,
+        "name": "Successeurs",
+        "arc": "drum",
+        "tome": 16,
+        "maxpages": 18,
+        "date": "24 Juillet 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 146,
+        "name": "Une bataille pour la défense d'un pays",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 20,
+        "date": "31 Juillet 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 147,
+        "name": "Imposteurs",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 18,
+        "date": "7 Août 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 148,
+        "name": "Jamais ne ploie",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 19,
+        "date": "21 Août 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 149,
+        "name": "Rumble !!",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 19,
+        "date": "28 Août 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 150,
+        "name": "Canon mitrailleur rotatif à 7 coups, ultime défenseur de la couronne royale de Drum",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 19,
+        "date": "4 Septembre 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 151,
+        "name": "Dans le ciel de Drum",             
+        "arc": "drum",
+        "tome": 17, 
+        "maxpages": 18,
+        "date": "11 Septembre 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 152,
+        "name": "Pleine lune",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 17,
+        "date": "18 Septembre 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 153,
+        "name": "Les cerisiers d'Hiluluk",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 17,
+        "date": "25 Septembre 2000",
+        "saga": "alabasta"
+    },{
+        "scan": 154,
+        "name": "En route pour Alabasta",
+        "arc": "drum",
+        "tome": 17,
+        "maxpages": 19,
+        "date": "2 Octobre 2000",
+        "saga": "alabasta"
+    }
+] 
+
+

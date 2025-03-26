@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ScanTome.css';
 import ScanBar from '../../components/ScanBar/ScanBar';
@@ -17,7 +17,8 @@ const ScanTome = () => {
     const [isFullScreen, setIsFullScreen] = useState(false);
     const [currentPageInput, setCurrentPageInput] = useState(selectedpagetome || 1);
     const [tomeData, setTomeData] = useState(null);
-
+    const [preloadedPages, setPreloadedPages] = useState({});
+    const preloadingActive = useRef(false);
 
     // Audio pour la page "To Be Continued"
     const [audio] = useState(new Audio('https://kpiece2.s3.eu-west-3.amazonaws.com/ost/tobecontinued.mp3'));
@@ -43,7 +44,7 @@ const ScanTome = () => {
 
     // Gestion de l'audio pour la page "To Be Continued"
     useEffect(() => {
-        if (!loading && !preloading && allPages.length > 0) {
+        if (!loading && allPages.length > 0) {
             const maxPage = allPages.length;
             const isLastPage = parseInt(selectedpagetome) === maxPage + 1;
 
@@ -53,7 +54,7 @@ const ScanTome = () => {
                 audio.play().catch(err => console.error('Échec de la lecture audio :', err));
             }
         }
-    }, [selectedpagetome, allPages, loading, preloading, audio]);
+    }, [selectedpagetome, allPages, loading, audio]);
 
     // Contenu personnalisé pour la dernière page
     const getCustomPageContent = () => (
@@ -79,136 +80,225 @@ const ScanTome = () => {
 
     const isCustomPage = (page, maxPageNum) => page === maxPageNum + 1;
 
-    const preloadImages = async (pages) => {
+    // Fonction pour charger une seule image
+    const loadImage = (page) => {
+        return new Promise((resolve) => {
+            if (preloadedPages[page.pageNum]) {
+                resolve(true);
+                return;
+            }
+
+            const img = new Image();
+            img.src = page.url;
+            img.onload = () => {
+                setPreloadedPages(prev => ({...prev, [page.pageNum]: true}));
+                resolve(true);
+            };
+            img.onerror = () => {
+                setPreloadedPages(prev => ({...prev, [page.pageNum]: false}));
+                resolve(false);
+            };
+        });
+    };
+
+    // Préchargement initial des pages essentielles
+    const preloadInitialImages = useCallback(async (pages, currentPageNum) => {
+        if (!pages || pages.length === 0) return;
+        
         setPreloading(true);
+        const currentIndex = parseInt(currentPageNum) - 1;
+        
+        // Déterminer les indices des pages à charger initialement
+        const indicesToLoad = [];
+        // Page courante
+        if (currentIndex >= 0 && currentIndex < pages.length) {
+            indicesToLoad.push(currentIndex);
+        }
+        
+        // 2 pages avant et 5 pages après
+        for (let i = 1; i <= 2; i++) {
+            if (currentIndex - i >= 0) {
+                indicesToLoad.push(currentIndex - i);
+            }
+        }
+        
+        for (let i = 1; i <= 5; i++) {
+            if (currentIndex + i < pages.length) {
+                indicesToLoad.push(currentIndex + i);
+            }
+        }
+        
+        // Charger ces pages
+        const pagesToLoad = indicesToLoad.map(idx => pages[idx]);
+        const totalToLoad = pagesToLoad.length;
         let loadedCount = 0;
-        const totalImages = pages.length;
-        const batchSize = 20;
-    
-        // Fonction utilitaire qui retourne une promesse résolue lors du chargement (ou erreur) d'une image
-        const loadImage = (page) => {
-            return new Promise((resolve) => {
-                const img = new Image();
-                img.src = page.url;
-                img.onload = () => {
-                    loadedCount++;
-                    setProgress(Math.floor((loadedCount / totalImages) * 100));
-                    resolve();
-                };
-                img.onerror = () => {
-                    loadedCount++;
-                    setProgress(Math.floor((loadedCount / totalImages) * 100));
-                    resolve();
-                };
-            });
-        };
-    
-        // Traitement par lots de 20 images
-        for (let i = 0; i < totalImages; i += batchSize) {
-            const batch = pages.slice(i, i + batchSize);
-            await Promise.all(batch.map(loadImage));
+        
+        for (const page of pagesToLoad) {
+            await loadImage(page);
+            loadedCount++;
+            setProgress(Math.floor((loadedCount / totalToLoad) * 100));
         }
-    
+        
         setPreloading(false);
-    };
-    
+    }, []);
 
-  useEffect(() => {
-    const fetchTomeData = async () => {
-        try {
-            const response = await fetch(`https://kpiece2.s3.eu-west-3.amazonaws.com/data/tomes/${tomelist}.json`);
-            if (!response.ok) throw new Error('Échec de la récupération des données du tome');
-            const tomes = await response.json();
-            // Trier les tomes par numéro en ordre croissant
-            tomes.sort((a, b) => a.tome - b.tome);
-            const currentTome = tomes.find(t => t.tome === parseInt(tomenumber));
-            if (!currentTome) throw new Error('Tome non trouvé');
-            const tomeIndex = tomes.findIndex(t => t.tome === parseInt(tomenumber));
-            const prevTome = tomeIndex > 0 ? tomes[tomeIndex - 1].tome : null;
-            const nextTome = tomeIndex < tomes.length - 1 ? tomes[tomeIndex + 1].tome : null;
-            setTomeData({ ...currentTome, prevTome, nextTome });
-
-            const searchResponse = await fetch('https://kpiece2.s3.eu-west-3.amazonaws.com/data/search.json');
-            if (!searchResponse.ok) throw new Error('Échec de la récupération des données de recherche');
-            const searchData = await searchResponse.json();
-
-            const arcs = Array.isArray(currentTome.arc) ? currentTome.arc : [currentTome.arc];
-            let scans = [];
-            for (const arc of arcs) {
-                const arcData = searchData.find(s => s.arc === arc);
-                if (!arcData) continue;
-                const start = Math.max(currentTome.firstscan, arcData.firstscan);
-                const end = Math.min(currentTome.lastscan, arcData.lastscan);
-                for (let scan = start; scan <= end; scan++) {
-                    scans.push({ saga: arcData.saga, arc, scan });
-                }
-            }
-
-            if (scans.length === 0) throw new Error('Aucun scan trouvé pour ce tome');
-
-            let allPagesData = [];
-            let scanInfoArray = [];
-            for (const scanInfo of scans) {
-                const { saga, arc, scan } = scanInfo;
-                const scanResponse = await fetch(`https://kpiece2.s3.eu-west-3.amazonaws.com/data/saga/${saga}/${arc}.json`);
-                if (!scanResponse.ok) {
-                    console.error(`Échec de la récupération des données pour le scan ${scan}`);
-                    continue;
-                }
-
-                const arcData = await scanResponse.json();
-                const scanData = arcData.find(s => s.scan === parseInt(scan));
-                if (!scanData) {
-                    console.error(`Scan ${scan} non trouvé dans les données de l'arc`);
-                    continue;
-                }
-
-                const maxPages = scanData.maxpages;
-                const pageStartIndex = allPagesData.length + 1;
-
-                scanInfoArray.push({
-                    saga,
-                    arc,
-                    scan,
-                    name: scanData.name,
-                    startPage: pageStartIndex,
-                    endPage: pageStartIndex + maxPages - 1,
-                    maxpages: maxPages
-                });
-
-                for (let i = 1; i <= maxPages; i++) {
-                    const formattedPage = i < 10 ? `0${i}` : i;
-                    allPagesData.push({
-                        pageNum: allPagesData.length + 1,
-                        url: `https://kpiece2.s3.eu-west-3.amazonaws.com/scan/${saga}/${arc}/${scan}/${formattedPage}.png`,
-                        scanIndex: scanInfoArray.length - 1
-                    });
-                }
-            }
-
-            setAllPages(allPagesData);
-            setScansInfo(scanInfoArray);
-            preloadImages(allPagesData);
-            setLoading(false);
-        } catch (error) {
-            console.error("Erreur lors de la récupération des données :", error);
-            setError(error.message);
-            setLoading(false);
+    // Préchargement en arrière-plan de pages supplémentaires
+    const preloadNextBatch = useCallback(async (pages, currentPageNum, batchSize = 5) => {
+        if (!pages || pages.length === 0 || preloadingActive.current) return;
+        
+        preloadingActive.current = true;
+        const currentIndex = parseInt(currentPageNum) - 1;
+        
+        // Déterminer les indices des pages suivantes à charger
+        const startIndex = currentIndex + 6; // Commencer après les 5 pages déjà chargées
+        const endIndex = Math.min(startIndex + batchSize - 1, pages.length - 1);
+        
+        // Si toutes les pages sont déjà préchargées
+        if (startIndex > endIndex) {
+            preloadingActive.current = false;
+            return;
         }
-    };
+        
+        // Charger ces pages
+        const pagesToLoad = [];
+        for (let i = startIndex; i <= endIndex; i++) {
+            if (!preloadedPages[pages[i].pageNum]) {
+                pagesToLoad.push(pages[i]);
+            }
+        }
+        
+        if (pagesToLoad.length === 0) {
+            preloadingActive.current = false;
+            return;
+        }
+        
+        // Mise à jour visuelle du progrès (facultatif)
+        const totalLoaded = Object.keys(preloadedPages).length;
+        const totalPages = pages.length;
+        setProgress(Math.floor((totalLoaded / totalPages) * 100));
+        
+        // Charger en arrière-plan
+        const promises = pagesToLoad.map(page => loadImage(page));
+        await Promise.all(promises);
+        
+        // Mise à jour finale du progrès
+        const newTotalLoaded = Object.keys(preloadedPages).length;
+        setProgress(Math.floor((newTotalLoaded / totalPages) * 100));
+        
+        preloadingActive.current = false;
+    }, [preloadedPages]);
 
-    fetchTomeData();
-}, [tomelist, tomenumber]);
+    useEffect(() => {
+        const fetchTomeData = async () => {
+            try {
+                const response = await fetch(`https://kpiece2.s3.eu-west-3.amazonaws.com/data/tomes/${tomelist}.json`);
+                if (!response.ok) throw new Error('Échec de la récupération des données du tome');
+                const tomes = await response.json();
+                // Trier les tomes par numéro en ordre croissant
+                tomes.sort((a, b) => a.tome - b.tome);
+                const currentTome = tomes.find(t => t.tome === parseInt(tomenumber));
+                if (!currentTome) throw new Error('Tome non trouvé');
+                const tomeIndex = tomes.findIndex(t => t.tome === parseInt(tomenumber));
+                const prevTome = tomeIndex > 0 ? tomes[tomeIndex - 1].tome : null;
+                const nextTome = tomeIndex < tomes.length - 1 ? tomes[tomeIndex + 1].tome : null;
+                setTomeData({ ...currentTome, prevTome, nextTome });
+
+                const searchResponse = await fetch('https://kpiece2.s3.eu-west-3.amazonaws.com/data/search.json');
+                if (!searchResponse.ok) throw new Error('Échec de la récupération des données de recherche');
+                const searchData = await searchResponse.json();
+
+                const arcs = Array.isArray(currentTome.arc) ? currentTome.arc : [currentTome.arc];
+                let scans = [];
+                for (const arc of arcs) {
+                    const arcData = searchData.find(s => s.arc === arc);
+                    if (!arcData) continue;
+                    const start = Math.max(currentTome.firstscan, arcData.firstscan);
+                    const end = Math.min(currentTome.lastscan, arcData.lastscan);
+                    for (let scan = start; scan <= end; scan++) {
+                        scans.push({ saga: arcData.saga, arc, scan });
+                    }
+                }
+
+                if (scans.length === 0) throw new Error('Aucun scan trouvé pour ce tome');
+
+                let allPagesData = [];
+                let scanInfoArray = [];
+                
+                // Charger les métadonnées de toutes les pages
+                for (const scanInfo of scans) {
+                    const { saga, arc, scan } = scanInfo;
+                    const scanResponse = await fetch(`https://kpiece2.s3.eu-west-3.amazonaws.com/data/saga/${saga}/${arc}.json`);
+                    if (!scanResponse.ok) {
+                        console.error(`Échec de la récupération des données pour le scan ${scan}`);
+                        continue;
+                    }
+
+                    const arcData = await scanResponse.json();
+                    const scanData = arcData.find(s => s.scan === parseInt(scan));
+                    if (!scanData) {
+                        console.error(`Scan ${scan} non trouvé dans les données de l'arc`);
+                        continue;
+                    }
+
+                    const maxPages = scanData.maxpages;
+                    const pageStartIndex = allPagesData.length + 1;
+
+                    scanInfoArray.push({
+                        saga,
+                        arc,
+                        scan,
+                        name: scanData.name,
+                        startPage: pageStartIndex,
+                        endPage: pageStartIndex + maxPages - 1,
+                        maxpages: maxPages
+                    });
+
+                    for (let i = 1; i <= maxPages; i++) {
+                        const formattedPage = i < 10 ? `0${i}` : i;
+                        allPagesData.push({
+                            pageNum: allPagesData.length + 1,
+                            url: `https://kpiece2.s3.eu-west-3.amazonaws.com/scan/${saga}/${arc}/${scan}/${formattedPage}.png`,
+                            scanIndex: scanInfoArray.length - 1
+                        });
+                    }
+                }
+
+                setAllPages(allPagesData);
+                setScansInfo(scanInfoArray);
+                
+                // Charger d'abord la page actuelle et quelques pages environnantes
+                const currentPage = parseInt(selectedpagetome) || 1;
+                await preloadInitialImages(allPagesData, currentPage);
+                
+                setLoading(false);
+            } catch (error) {
+                console.error("Erreur lors de la récupération des données :", error);
+                setError(error.message);
+                setLoading(false);
+            }
+        };
+
+        fetchTomeData();
+    }, [tomelist, tomenumber, preloadInitialImages]);
 
     // Défilement après chargement
     useEffect(() => {
-        if (!loading && !preloading) window.scrollTo(0, 170);
-    }, [selectedpagetome, loading, preloading]);
+        if (!loading) window.scrollTo(0, 170);
+    }, [selectedpagetome, loading]);
 
     // Mise à jour de l'entrée de page
     useEffect(() => {
         setCurrentPageInput(selectedpagetome || 1);
     }, [selectedpagetome]);
+
+    // Précharger plus de pages quand l'utilisateur navigue
+    useEffect(() => {
+        if (!loading && allPages.length > 0 && selectedpagetome) {
+            const currentPage = parseInt(selectedpagetome);
+            // Précharger quelques pages supplémentaires
+            preloadNextBatch(allPages, currentPage, 5);
+        }
+    }, [selectedpagetome, loading, allPages, preloadNextBatch]);
 
     // Composant de chargement
     const LoadingComponent = () => {
@@ -229,7 +319,7 @@ const ScanTome = () => {
         return <Loading />;
     };
 
-    if (loading || preloading) return <LoadingComponent />;
+    if (loading) return <LoadingComponent />;
     if (error) return <div className="scan-page-error">Tome Non disponible</div>;
 
     const maxPage = allPages.length;
@@ -248,7 +338,24 @@ const ScanTome = () => {
     const currentScanInfo = getCurrentScanInfo();
 
     // Navigation vers une page spécifique
-    const navigateToPage = (page) => navigate(`/tomes/${tomelist}/${tomenumber}/${page}`);
+    const navigateToPage = (page) => {
+        navigate(`/tomes/${tomelist}/${tomenumber}/${page}`);
+        
+        // Précharger silencieusement les pages adjacentes si elles ne sont pas déjà chargées
+        const pageNum = parseInt(page);
+        if (pageNum <= maxPage) {
+            const nextPage = pageNum < maxPage ? pageNum + 1 : null;
+            const prevPage = pageNum > 1 ? pageNum - 1 : null;
+            
+            if (nextPage && !preloadedPages[nextPage]) {
+                loadImage(allPages[nextPage - 1]);
+            }
+            
+            if (prevPage && !preloadedPages[prevPage]) {
+                loadImage(allPages[prevPage - 1]);
+            }
+        }
+    };
 
     // Gestion des clics sur l'image
     const handleImageClick = (e) => {
@@ -300,6 +407,7 @@ const ScanTome = () => {
                 src={page.url}
                 alt={`Page ${page.pageNum}`}
                 className="scan-page-image"
+                loading="lazy"
             />
         ));
     } else if (showCustomPage) {
@@ -332,6 +440,10 @@ const ScanTome = () => {
             </div>
         );
     }
+    
+    // Calculer le pourcentage réel de pages préchargées
+    const preloadedCount = Object.values(preloadedPages).filter(Boolean).length;
+    const preloadPercentage = maxPage > 0 ? Math.floor((preloadedCount / maxPage) * 100) : 0;
 
     return (
         <div className="scan-tome">
@@ -366,7 +478,6 @@ const ScanTome = () => {
                             ))}
                         </select>
                     </div>
-
                 )}
             </div>
             {
@@ -389,7 +500,22 @@ const ScanTome = () => {
                     </div>
                 )
             }
-        </div >
+            {preloadPercentage < 100 && (
+                <div className="background-loading-indicator" style={{
+                    position: 'fixed',
+                    bottom: '10px',
+                    right: '10px',
+                    background: 'rgba(0, 0, 0, 0.3)',
+                    color: 'white',
+                    padding: '5px 10px',
+                    borderRadius: '5px',
+                    fontSize: '10px',
+                    zIndex: 1000
+                }}>
+                    Pages chargées: {preloadedCount}/{maxPage} ({preloadPercentage}%)
+                </div>
+            )}
+        </div>
     );
 };
 

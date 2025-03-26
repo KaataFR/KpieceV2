@@ -1,0 +1,75 @@
+[
+    {
+        "scan": 106,
+        "name": "Un accueil chaleureux",
+        "arc": "whiskypeak",
+        "tome": 12,
+        "maxpages": 19,
+        "date": "27 Septembre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 107,
+        "name": "Clair de lune et pierres tombales",
+        "arc": "whiskypeak",
+        "tome": 12,
+        "maxpages": 17,
+        "date": "4 Octobre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 108,
+        "name": "Seul contre 100 chasseurs de primes",
+        "arc": "whiskypeak",
+        "tome": 12,
+        "maxpages": 19,
+        "date": "9 Octobre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 109,
+        "name": "Question de responsabilité",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 20,
+        "date": "18 Octobre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 110,
+        "name": "Une longue nuit",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 19,
+        "date": "25 Octobre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 111,
+        "name": "Une organisation criminelle secrète",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 17,
+        "date": "1er Novembre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 112,
+        "name": "Luffy versus Zoro",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 18,
+        "date": "8 novembre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 113,
+        "name": "Tiens bon !!",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 19,
+        "date": "15 Novembre 1999",
+        "saga": "alabasta"
+    },{
+        "scan": 114,
+        "name": "Le capitaine s'affirme",
+        "arc": "whiskypeak",
+        "tome": 13,
+        "maxpages": 19,
+        "date": "1999",
+        "saga": "alabasta"
+    }  
+]   

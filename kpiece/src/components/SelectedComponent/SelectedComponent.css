@@ -309,16 +309,46 @@
 }
 
 /* Each card appears with a slight delay based on its position */
-.Selected-Component-Scan:nth-child(1) { animation-delay: 0.1s; }
-.Selected-Component-Scan:nth-child(2) { animation-delay: 0.2s; }
-.Selected-Component-Scan:nth-child(3) { animation-delay: 0.3s; }
-.Selected-Component-Scan:nth-child(4) { animation-delay: 0.4s; }
-.Selected-Component-Scan:nth-child(5) { animation-delay: 0.5s; }
-.Selected-Component-Scan:nth-child(6) { animation-delay: 0.6s; }
-.Selected-Component-Scan:nth-child(7) { animation-delay: 0.7s; }
-.Selected-Component-Scan:nth-child(8) { animation-delay: 0.8s; }
-.Selected-Component-Scan:nth-child(9) { animation-delay: 0.9s; }
-.Selected-Component-Scan:nth-child(10) { animation-delay: 1s; }
+.Selected-Component-Scan:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.Selected-Component-Scan:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.Selected-Component-Scan:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.Selected-Component-Scan:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.Selected-Component-Scan:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.Selected-Component-Scan:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.Selected-Component-Scan:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.Selected-Component-Scan:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.Selected-Component-Scan:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.Selected-Component-Scan:nth-child(10) {
+    animation-delay: 1s;
+}
+
 /* Add more if needed */
 
 @keyframes cardAppear {
@@ -326,6 +356,7 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
