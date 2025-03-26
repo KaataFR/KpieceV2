@@ -1,0 +1,128 @@
+[
+  {
+    "scan": 8,
+    "name": "Nami",
+    "arc": "orangetown",
+    "tome": 1,
+    "maxpages": 19,
+    "date": "15 Septembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 9,
+    "name": "Une fille diabolique",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 22,
+    "date": "22 Septembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 10,
+    "name": "Du Désordre à la taverne",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 23,
+    "date": "29 Septembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 11,
+    "name": "Sauve-qui-peut",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 19,
+    "date": "6 Octobre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 12,
+    "name": "Un Chien",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 20,
+    "date": "13 Octobre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 13,
+    "name": "Trésor",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 19,
+    "date": "20 Octobre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 14,
+    "name": "Sur un coup de tête !",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 18,
+    "date": "27 Octobre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 15,
+    "name": "Gong",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 19,
+    "date": "3 Novembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 16,
+    "name": "Luffy versus la bande à Baggy !!",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 17,
+    "date": "10 Novembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 17,
+    "name": "Question de niveau",
+    "arc": "orangetown",
+    "tome": 2,
+    "maxpages": 20,
+    "date": "17 Novembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 18,
+    "name": "Buggy le clown",
+    "arc": "orangetown",
+    "tome": 3,
+    "maxpages": 20,
+    "date": "24 Novembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 19,
+    "name": "Le fruit du Démon",
+    "arc": "orangetown",
+    "tome": 3,
+    "maxpages": 19,
+    "date": "1 Décembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 20,
+    "name": "Voleuse à tout prix",
+    "arc": "orangetown",
+    "tome": 3,
+    "maxpages": 19,
+    "date": "8 Décembre 1997",
+    "saga": "eastblue"
+  },
+  {
+    "scan": 21,
+    "name": "Tous en ville",
+    "arc": "orangetown",
+    "tome": 3,
+    "maxpages": 19,
+    "date": "22 Décembre 1997",
+    "saga": "eastblue"
+  }
+]

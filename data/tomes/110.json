@@ -1,0 +1,18 @@
+[
+    {
+        "tome": 111,
+        "name": "Aventure à Elbaf",
+        "firstscan": 1122,
+        "lastscan": 1133,
+        "arc": ["egghead","elbaf"],
+        "saga": ["finale"]
+    },
+    {
+        "tome": 110,
+        "name": "Le Destin d'une époque",
+        "firstscan": 1111,
+        "lastscan": 1121,
+        "arc": ["egghead"],
+        "saga": ["finale"]
+    }
+]

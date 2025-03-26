@@ -1,0 +1,73 @@
+[
+    {
+        "tome": 99,
+        "name": "Luffy au Chapeau de Paille",
+        "firstscan": 995,
+        "lastscan": 1004,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 98,
+        "name": "Les neuf rônins",
+        "firstscan": 985,
+        "lastscan": 994,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 97,
+        "name": "Ma Bible",
+        "firstscan": 975,
+        "lastscan": 984,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 96,
+        "name": "Bouillir, tel est le propre du Oden",
+        "firstscan": 965,
+        "lastscan": 974,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 95,
+        "name": "L'aventure d'Oden",
+        "firstscan": 954,
+        "lastscan": 964,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 94,
+        "name": "Le rêve des guerriers",
+        "firstscan": 943,
+        "lastscan": 953,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 93,
+        "name": "La coqueluche du Village d'Ebisu",
+        "firstscan": 932,
+        "lastscan": 942,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 92,
+        "name": "La grande courtisane Komurasaki",
+        "firstscan": 922,
+        "lastscan": 931,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 91,
+        "name": "Aventure au Pays des samourais",
+        "firstscan": 911,
+        "lastscan": 921,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 90,
+        "name": "La terre sainte de Marie Joie",
+        "firstscan": 901,
+        "lastscan": 910,
+        "arc": ["wholecakeisland","reverie","wanokuni"],
+        "saga": ["wholecakeisland","paysdeswa"]
+    }
+]

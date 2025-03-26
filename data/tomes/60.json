@@ -1,0 +1,73 @@
+[
+    {
+        "tome": 69,
+        "name": "SAD",
+        "firstscan": 679,
+        "lastscan": 690,
+        "arc": ["punkhazard"],
+        "saga": ["dressrosa"]
+    },{
+        "tome": 68,
+        "name": "Alliance entre pirates",
+        "firstscan": 668,
+        "lastscan": 678,
+        "arc": ["punkhazard"],
+        "saga": ["dressrosa"]
+    },{
+        "tome": 67,
+        "name": "Cool Fight",
+        "firstscan": 657,
+        "lastscan": 667,
+        "arc": ["punkhazard"],
+        "saga": ["dressrosa"]
+    },{
+        "tome": 66,
+        "name": "Vers le soleil",
+        "firstscan": 647,
+        "lastscan": 656,
+        "arc": ["hommespoissons","punkhazard"],
+        "saga": ["hommepoissons","dressrosa"]
+    },{
+        "tome": 65,
+        "name": "Table rase",
+        "firstscan": 637,
+        "lastscan": 646,
+        "arc": ["hommespoissons"],
+        "saga": ["hommepoissons"]
+    },{
+        "tome": 64,
+        "name": "100 000 vs 10",
+        "firstscan": 627,
+        "lastscan": 636,
+        "arc": ["hommespoissons"],
+        "saga": ["hommepoissons"]
+    },{
+        "tome": 63,
+        "name": "Otohime et Tiger",
+        "firstscan": 615,
+        "lastscan": 626,
+        "arc": ["hommespoissons"],
+        "saga": ["hommepoissons"]
+    },{
+        "tome": 62,
+        "name": "Périple sur l'île des hommes-poissons",
+        "firstscan": 604,
+        "lastscan": 614,
+        "arc": ["hommespoissons"],
+        "saga": ["hommepoissons"]
+    },{
+        "tome": 61,
+        "name": "À l'aube d'une grande aventure vers le nouveau monde",
+        "firstscan": 595,
+        "lastscan": 603,
+        "arc": ["postguerre","retourasabaody","hommespoissons"],
+        "saga": ["guerreausommet","hommepoissons"]
+    },{
+        "tome": 60,
+        "name": "Petit frère",
+        "firstscan": 585,
+        "lastscan": 594,
+        "arc": ["postguerre"],
+        "saga": ["guerreausommet"]
+    }
+]

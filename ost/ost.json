@@ -1,0 +1,134 @@
+[
+    {
+        "name": "sad",
+        "ostnumber": 12,
+        "ostname": [
+            "Mother Sea",
+            "Gold and Oden",
+            "Shizuka na Ikari",
+            "Mushroom",
+            "If There Are Storms There Are Stars Too",
+            "Daft Green Cause of Tragedy",
+            "I Think Of The Past",
+            "The Sword of Vows",
+            "The time of Promise",
+            "Chopper Sad",
+            "Luffy's Speech to Sanji",
+            "Woonan and the Stone Storage Room"
+        ]
+    },
+    {
+        "name": "chill",
+        "ostnumber": 10,
+        "ostname": [
+            "Hungry Luffy",
+            "A Human's Heart",
+            "World number one Oden store",
+            "Harbour Village",
+            "Message from uunam",
+            "Mezase",
+            "I'm Becoming the King of Pirates",
+            "After Eating, To the Grand Line",
+            "We Did it Party",
+            "Wanokuni"
+        ]
+    },
+    {
+        "name": "fight",
+        "ostnumber": 12,
+        "ostname": [
+            "Straw Hat Pirates Begin Counterattack",
+            "Three Towers",
+            "Zoro's theme",
+            "Overtaken",
+            "Gomu gomu Bazooka!",
+            "Sanji's Theme",
+            "Chopper Mask",
+            "Blueno",
+            "Fierce Battle!",
+            "Damned Punk",
+            "Lucci Fight",
+            "Galaxy Impact"
+        ]
+    },
+    {
+        "name": "danger",
+        "ostnumber": 19,
+        "ostname": [
+            "Difficult",
+            "If There Are Storms There Are Stars Too",
+            "The Operations Begins",
+            "Sanji's Big Pinch",
+            "Admiral Kizaru",
+            "Facing 3 Admirals",
+            "Terror of the King Cannon",
+            "The Marine Swordsman Battle Cry",
+            "Giant Beast Butler!",
+            "Giant Stronghold Takeoff",
+            "Diamond Jozu",
+            "Blackbeards Plot",
+            "Episode Intro",
+            "Emperor Big Mom",
+            "Torn Strawhat",
+            "Onigashima Theme",
+            "Marine Attack The Village",
+            "Imu's Theme",
+            "Freezing Hell"
+        ]
+    },
+    {
+        "name": "mysterious",
+        "ostnumber": 7,
+        "ostname": [
+            "Merveille's Secret",
+            "Lurking Shadows",
+            "Kuma",
+            "Adventure on Ghost Island",
+            "Collecting Cake",
+            "Caesar Clown",
+            "Tesoro Money"
+        ]
+    },
+    {
+        "name": "epic",
+        "ostnumber": 9,
+        "ostname": [
+            "The Very Very Strongest",
+            "Luffy Fierce Attack",
+            "Whitebeard Theme",
+            "Justice",
+            "The Fight Continues",
+            "A Piece Of a Hawk's Wing",
+            "Yuuzora o Pell no Se ni Notte",
+            "Roger vs Whitebeard",
+            "Awakening"
+        ]
+    },
+    {
+        "name": "emotion",
+        "ostnumber": 8,
+        "ostname": [
+            "To The Grand Line",
+            "Memories of Brother",
+            "Wano Kuni We Are",
+            "Sanji's True Heart",
+            "Wano's Hope",
+            "Luffy's Complete Defeat",
+            "Bonds of the Samurai and Mink Group",
+            "Fuyujima Drum-tou"
+        ]
+    },
+    {
+        "name": "fun",
+        "ostnumber": 7,
+        "ostname": [
+            "Goofy",
+            "Dumb Strawhats",
+            "Usopp Trying something",
+            "Party Theme",
+            "Kureha no Wakarekata",
+            "Niku!!!",
+            "Olga"
+        ]
+    }
+]

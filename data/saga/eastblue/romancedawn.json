@@ -1,0 +1,66 @@
+[
+    {
+      "scan": 1,
+      "name": "Romance Dawn",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 52,
+      "date": "19 Juillet 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 2,
+      "name": "Luffy, l'Homme au Chapeau de Paille",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 23,
+      "date": "28 Juillet 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 3,
+      "name": "Zoro le Chasseur de Pirates",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 21,
+      "date": "4 Août 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 4,
+      "name": "Morgan, le Colonel à la Main De Fer",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 19,
+      "date": "11 Août 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 5,
+      "name": "Le Roi des Pirates et la Fine Lame",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 19,
+      "date": "25 Août 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 6,
+      "name": "Un premier matelot",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 22,
+      "date": "1 Septembre 1997",
+      "saga": "eastblue"
+    },
+    {
+      "scan": 7,
+      "name": "Des amis",
+      "arc": "romancedawn",
+      "tome": 1,
+      "maxpages": 21,
+      "date": "8 Septembre 1997",
+      "saga": "eastblue"
+    }
+  ]
+  

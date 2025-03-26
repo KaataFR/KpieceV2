@@ -1,0 +1,170 @@
+[
+        {
+                "name": "Finale",
+                "arcsname": [
+                        "Elbaf",
+                        "Egg Head"
+                ],
+                "arcssearch": [
+                        "elbaf",
+                        "egghead"
+                ],
+                "number": 11,
+                "saganame": "finale"
+        },
+        {
+                "name": "Pays des Wa",
+                "arcs": [
+                        "Wano Kuni"
+                ],
+                "arcsname": [
+                        "Wano Kuni"
+                ],
+                "arcssearch": [
+                        "wanokuni"
+                ],
+                "number": 10,
+                "saganame": "paysdeswa"
+        },
+        {
+                "name": "Whole Cake Island",
+                "arcsname": [
+                        "Rêverie",
+                        "Whole Cake Island",
+                        "Zou"
+                ],
+                "arcssearch": [
+                        "reverie",
+                        "wholecakeisland",
+                        "zou"
+                ],
+                "number": 9,
+                "saganame": "wholecakeisland"
+        },
+        {
+                "name": "Dressrosa",
+                "arcsname": [
+                        "Punk Hazard",
+                        "Dressrosa"
+                ],
+                "arcssearch": [
+                        "punkhazard",
+                        "dressrosa"
+                ],
+                "number": 8,
+                "saganame": "dressrosa"
+        },
+        {
+                "name": "Île des Hommes-Poissons",
+                "arcsname": [
+                        "Retour à Sabaody",
+                        "Île des Hommes-Poissons"
+                ],
+                "arcssearch": [
+                        "retourasabaody",
+                        "hommespoissons"
+                ],
+                "number": 7,
+                "saganame": "hommespoissons"
+        },
+        {
+                "name": "Guerre au Sommet",
+                "arcsname": [
+                        "Archipel Sabaody",
+                        "Amazon Lily",
+                        "Impel Down",
+                        "Marineford",
+                        "Post-Guerre"
+                ],
+                "arcssearch": [
+                        "sabaody",
+                        "amazonlily",
+                        "impeldown",
+                        "marineford",
+                        "postguerre"
+                ],
+                "number": 6,
+                "saganame": "guerreausommet"
+        },
+        {
+                "name": "Thriller Bark",
+                "arcsname": [
+                        "Thriller Bark"
+                ],
+                "arcssearch": [
+                        "thrillerbark"
+                ],
+                "number": 5,
+                "saganame": "thrillerbark"
+        },
+        {
+                "name": "Water Seven",
+                "arcsname": [
+                        "Long Ring Long Land",
+                        "Water Seven",
+                        "Enies Lobby",
+                        "Post-Enies Lobby"
+                ],
+                "arcssearch": [
+                        "longringlongland",
+                        "waterseven",
+                        "enieslobby",
+                        "postenieslobby"
+                ],
+                "number": 4,
+                "saganame": "waterseven"
+        },
+        {
+                "name": "Skypiea",
+                "arcsname": [
+                        "Jaya",
+                        "Skypiea"
+                ],
+                "arcssearch": [
+                        "jaya",
+                        "skypiea"
+                ],
+                "number": 3,
+                "saganame": "skypiea"
+        },
+        {
+                "name": "Alabasta",
+                "arcsname": [
+                        "Reverse Moutain",
+                        "Whisky Peak",
+                        "Little Garden",
+                        "Drum",
+                        "Alabasta"
+                ],
+                "arcssearch": [
+                        "reversemoutain",
+                        "whiskypeak",
+                        "littlegarden",
+                        "drum",
+                        "alabasta"
+                ],
+                "number": 2,
+                "saganame": "alabasta"
+        },
+        {
+                "name": "East Blue",
+                "arcsname": [
+                        "Romance Dawn",
+                        "Orange Town",
+                        "Sirop",
+                        "Baratie",
+                        "Arlong Park",
+                        "Loguetown"
+                ],
+                "arcssearch": [
+                        "romancedawn",
+                        "orangetown",
+                        "sirop",
+                        "baratie",
+                        "arlongpark",
+                        "loguetown"
+                ],
+                "number": 1,
+                "saganame": "eastblue"
+        }
+]

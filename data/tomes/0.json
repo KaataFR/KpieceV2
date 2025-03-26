@@ -1,0 +1,66 @@
+[
+    {
+        "tome": 9,
+        "name": "Larmes",
+        "firstscan": 72,
+        "lastscan": 81,
+        "arc": ["arlongpark"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 8,
+        "name": "Je ne mourrai pas",
+        "firstscan": 63,
+        "lastscan": 71,
+        "arc": ["baratie","arlongpark"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 7,
+        "name": "Vieux machin",
+        "firstscan": 54,
+        "lastscan": 62,
+        "arc": ["baratie"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 6,
+        "name": "Le serment",
+        "firstscan": 45,
+        "lastscan": 53,
+        "arc": ["baratie"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 5,
+        "name": "Pour qui sonne le glas",
+        "firstscan": 36,
+        "lastscan": 44,
+        "arc": ["sirop","baratie"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 4,
+        "name": "Attaque au clair de lune",
+        "firstscan": 27,
+        "lastscan": 35,
+        "arc": ["sirop"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 3,
+        "name": "Une vérité qui blesse",
+        "firstscan": 18,
+        "lastscan": 26,
+        "arc": ["orangetown","sirop"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 2,
+        "name": "Luffy versus la bande à Baggy !!",
+        "firstscan": 9,
+        "lastscan": 17,
+        "arc": ["orangetown"],
+        "saga": ["eastblue"]
+    },{
+        "tome": 1,
+        "name": "Romance Dawn - À l'aube d'une grande aventure",
+        "firstscan": 1,
+        "lastscan": 8,
+        "arc": ["romancedawn","orangetown"],
+        "saga": ["eastblue"]
+    }
+]

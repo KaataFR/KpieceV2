@@ -1,0 +1,35 @@
+[
+    {
+        "scan": 1125,
+        "name": "Qu'est-ce que la mort ?",
+        "arc": "elbaf",
+        "tome": 111,
+        "maxpages": 18,
+        "date": "6 Septembre 2024",
+        "saga": "finale"
+    },{
+        "scan": 1124,
+        "name": "Meilleur Ami",
+        "arc": "egghead",
+        "tome": 110,
+        "maxpages": 13,
+        "date": "26 Aout 2024",
+        "saga": "finale"
+    },{
+        "scan": 1123,
+        "name": "Les deux semaines oubliées",
+        "arc": "egghead",
+        "tome": 110,
+        "maxpages": 18,
+        "date": "19 Aout 2024",
+        "saga": "finale"
+    },{
+        "scan": 1122,
+        "name": "Le moment de vérité",
+        "arc": "egghead",
+        "tome": 110,
+        "maxpages": 16,
+        "date": "5 Aout 2024",
+        "saga": "finale"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "arc": "romancedawn",
+        "arcName": "Romance Dawn",
+        "color": ["FFA500", "FFD700"]
+    },
+    {
+        "arc": "orangetown",
+        "arcName": "Orange Town",
+        "color": ["FFA500", "FF8C00"]
+    },
+    {
+        "arc": "sirop",
+        "arcName": "Sirop",
+        "color": ["F4A460", "D2B48C"]
+    },
+    {
+        "arc": "baratie",
+        "arcName": "Baratie",
+        "color": ["FF0000", "FFFFFF"]
+    },
+    {
+        "arc": "arlongpark",
+        "arcName": "Arlong Park",
+        "color": ["2E8B57", "556B2F"]
+    },
+    {
+        "arc": "loguetown",
+        "arcName": "Loguetown",
+        "color": ["8B4513", "DAA520"]
+    },
+    {
+        "arc": "longringlongland",
+        "arcName": "Long Ring Long Land",
+        "color": ["8A2BE2", "FF69B4"]
+    },
+    {
+        "arc": "jaya",
+        "arcName": "Jaya",
+        "color": ["CD853F", "D2B48C"]
+    },
+    {
+        "arc": "skypiea",
+        "arcName": "Skypiea",
+        "color": ["87CEEB", "00BFFF"]
+    },
+    {
+        "arc": "waterseven",
+        "arcName": "Water Seven",
+        "color": ["1E90FF", "4682B4"]
+    },
+    {
+        "arc": "enieslobby",
+        "arcName": "Enies Lobby",
+        "color": ["C0392B", "8B0000"]
+    },
+    {
+        "arc": "postenieslobby",
+        "arcName": "Post-Enies Lobby",
+        "color": ["4B0082", "800080"]
+    },
+    {
+        "arc": "thrillerbark",
+        "arcName": "Thriller Bark",
+        "color": ["556B2F", "2F4F4F"]
+    },
+    {
+        "arc": "sabaody",
+        "arcName": "Sabaody",
+        "color": ["20B2AA", "FFDEAD"]
+    },
+    {
+        "arc": "amazonlily",
+        "arcName": "Amazon Lily",
+        "color": ["228B22", "32CD32"]
+    },
+    {
+        "arc": "hommespoissons",
+        "arcName": "Hommes-Poissons",
+        "color": ["00008B", "4682B4"]
+    },
+    {
+        "arc": "punkhazard",
+        "arcName": "Punk Hazard",
+        "color": ["FF4500", "8A2BE2"]
+    },
+    {
+        "arc": "dressrosa",
+        "arcName": "Dressrosa",
+        "color": ["FF1493", "FFD700"]
+    },
+    {
+        "arc": "zou",
+        "arcName": "Zou",
+        "color": ["556B2F", "8FBC8F"]
+    },
+    {
+        "arc": "wholecakeisland",
+        "arcName": "Whole Cake Island",
+        "color": ["FFC0CB", "FF69B4"]
+    },
+    {
+        "arc": "reverie",
+        "arcName": "Reverie",
+        "color": ["2F4F4F", "708090"]
+    },
+    {
+        "arc": "wanokuni",
+        "arcName": "Wano Kuni",
+        "color": ["8B0000", "FFD700"]
+    },
+    {
+        "arc": "egghead",
+        "arcName": "Egg Head",
+        "color": ["FFFF00", "00FF00"]
+    },
+    {
+        "arc": "elbaf",
+        "arcName": "Elbaf",
+        "color": ["708090", "A9A9A9"]
+    }
+]

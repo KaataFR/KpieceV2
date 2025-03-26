@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkpiece=self.webpackChunkkpiece||[]).push([[150],{150:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});a(43);var t=a(579);const c=()=>(0,t.jsxs)("div",{className:"not-found-page",children:[(0,t.jsx)("h2",{children:"Cette page n'a jamais exist\xe9"}),(0,t.jsx)("img",{src:"https://kpiece2.s3.eu-west-3.amazonaws.com/img/assets/eyes.png",alt:"eyes"})]})}}]);
+//# sourceMappingURL=150.e98d14e8.chunk.js.map

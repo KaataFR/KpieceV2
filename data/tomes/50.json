@@ -1,0 +1,82 @@
+[
+    {
+        "tome": 59,
+        "name": "La mort de Portgas D. Ace",
+        "firstscan": 574,
+        "lastscan": 584,
+        "arc": ["marineford","postguerre"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 58,
+        "name": "L'ère de Barbe Blanche",
+        "firstscan": 563,
+        "lastscan": 573,
+        "arc": ["marineford"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 57,
+        "name": "Guerre au sommet",
+        "firstscan": 552,
+        "lastscan": 562,
+        "arc": ["marineford"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 56,
+        "name": "Merci pour tout",
+        "firstscan": 542,
+        "lastscan": 551,
+        "arc": ["impeldown","marineford"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 55,
+        "name": "Un travesti en Enfer",
+        "firstscan": 533,
+        "lastscan": 541,
+        "arc": ["impeldown"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 54,
+        "name": "Plus personne ne m'arrêtera",
+        "firstscan": 523,
+        "lastscan": 532,
+        "arc": ["amazonlily","impeldown"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 53,
+        "name": "Le tempérament d'un roi",
+        "firstscan": 513,
+        "lastscan": 522,
+        "arc": ["sabaody","amazonlily"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 52,
+        "name": "Roger et Rayleigh",
+        "firstscan": 503,
+        "lastscan": 512,
+        "arc": ["sabaody"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 51,
+        "name": "Les onze supernovae",
+        "firstscan": 492,
+        "lastscan": 502,
+        "arc": ["sabaody"],
+        "saga": ["guerreausommet"]
+    },
+    {
+        "tome": 50,
+        "name": "De nouveau face au mur",
+        "firstscan": 482,
+        "lastscan": 491,
+        "arc": ["thrillerbark","sabaody"],
+        "saga": ["thrillerbark","guerreausommet"]
+    }
+]

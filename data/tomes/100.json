@@ -1,0 +1,73 @@
+[
+    {
+        "tome": 109,
+        "name": "Toujours de ton côté",
+        "firstscan": 1101,
+        "lastscan": 1110,
+        "arc": ["egghead"],
+        "saga": ["finale"]
+    },{
+        "tome": 108,
+        "name": "Un monde dans lequel mieux vaut mourir",
+        "firstscan": 1089,
+        "lastscan": 1100,
+        "arc": ["egghead"],
+        "saga": ["finale"]
+    },{
+        "tome": 107,
+        "name": "Le héros de la légende",
+        "firstscan": 1077,
+        "lastscan": 1088,
+        "arc": ["egghead"],
+        "saga": ["finale"]
+    },{
+        "tome": 106,
+        "name": "Le rêve d'un génie",
+        "firstscan": 1066,
+        "lastscan": 1076,
+        "arc": ["egghead"],
+        "saga": ["finale"]
+    },{
+        "tome": 105,
+        "name": "Le rêve de Luffy",
+        "firstscan": 1056,
+        "lastscan": 1065,
+        "arc": ["wanokuni","egghead"],
+        "saga": ["paysdeswa","finale"]
+    },{
+        "tome": 104,
+        "name": "Momonosuké Kozuki, Shogun du pays des Wa",
+        "firstscan": 1047,
+        "lastscan": 1055,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 103,
+        "name": "Le Guerrier libérateur",
+        "firstscan": 1036,
+        "lastscan": 1046,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 102,
+        "name": "Un moment décisif",
+        "firstscan": 1026,
+        "lastscan": 1035,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 101,
+        "name": "Place aux têtes d'affiche",
+        "firstscan": 1016,
+        "lastscan": 1025,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    },{
+        "tome": 100,
+        "name": "Le Fluide Royale",
+        "firstscan": 1005,
+        "lastscan": 1015,
+        "arc": ["wanokuni"],
+        "saga": ["paysdeswa"]
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+    "scan": 101,
+    "name": "Reverse Mountain",
+    "arc": "reversemoutain",
+    "tome": 12,
+    "maxpages": 18,
+    "date": "23 Août 1999",
+    "saga": "alabasta"
+  },
+  {
+   "scan": 102,
+    "name": "En route pour Grand Line",
+    "arc": "reversemoutain",
+    "tome": 12,
+    "maxpages": 18,
+    "date": "30 Août 1999",
+    "saga": "alabasta"
+  },{
+    "scan": 103,
+    "name": "Drôle de baleine",
+    "arc": "reversemoutain",
+    "tome": 12,
+    "maxpages": 20,
+    "date": "6 Septembre 1999",
+    "saga": "alabasta"
+  },
+  {
+   "scan": 104,
+    "name": "Le cap de la promesse",
+    "arc": "reversemoutain",
+    "tome": 12,
+    "maxpages": 19,
+    "date": "13 Septembre 1999",
+    "saga": "alabasta"
+  },{
+    "scan": 105,
+    "name": "Log pose",
+    "arc": "reversemoutain",
+    "tome": 12,
+    "maxpages": 19,
+    "date": "20 Septembre 1999",
+    "saga": "alabasta"
+  }
+]

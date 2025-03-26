@@ -1,0 +1,73 @@
+[
+    {
+        "tome": 49,
+        "name": "Nightmare Luffy",
+        "firstscan": 471,
+        "lastscan": 481,
+        "arc": ["thrillerbark"],
+        "saga": ["thrillerbark"]
+    },{
+        "tome": 48,
+        "name": "L'aventure d'Oz",
+        "firstscan": 460,
+        "lastscan": 470,
+        "arc": ["thrillerbark"],
+        "saga": ["thrillerbark"]
+    },{
+        "tome": 47,
+        "name": "Temps couvert avec chutes d'os par moments",
+        "firstscan": 450,
+        "lastscan": 459,
+        "arc": ["thrillerbark"],
+        "saga": ["thrillerbark"]
+    },{
+        "tome": 46,
+        "name": "Aventure sur l'île fantôme",
+        "firstscan": 441,
+        "lastscan": 449,
+        "arc": ["postenieslobby","thrillerbark"],
+        "saga": ["waterseven","thrillerbark"]
+    },{
+        "tome": 45,
+        "name": "Je comprend ce que vous ressentez",
+        "firstscan": 431,
+        "lastscan": 440,
+        "arc": ["postenieslobby"],
+        "saga": ["waterseven"]
+    },{
+        "tome": 44,
+        "name": "Rentrons",
+        "firstscan": 420,
+        "lastscan": 430,
+        "arc": ["enieslobby"],
+        "saga": ["waterseven"]
+    },{
+        "tome": 43,
+        "name": "La légende du héros",
+        "firstscan": 410,
+        "lastscan": 419,
+        "arc": ["enieslobby"],
+        "saga": ["waterseven"]
+    },{
+        "tome": 42,
+        "name": "Les pirates contre le CP9",
+        "firstscan": 400,
+        "lastscan": 409,
+        "arc": ["enieslobby"],
+        "saga": ["waterseven"]
+    },{
+        "tome": 41,
+        "name": "Déclaration de guerre",
+        "firstscan": 389,
+        "lastscan": 399,
+        "arc": ["enieslobby"],
+        "saga": ["waterseven"]
+    },{
+        "tome": 40,
+        "name": "Gear",
+        "firstscan": 378,
+        "lastscan": 388,
+        "arc": ["enieslobby"],
+        "saga": ["waterseven"]
+    }
+]
